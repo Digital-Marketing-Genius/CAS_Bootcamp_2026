@@ -1,0 +1,2698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career &amp; Stewardship Bootcamp 2026 | Liberty Career Academy</title>
+<meta name="description" content="Career and Stewardship Bootcamp 2026 by Liberty Career Academy. A free, energetic two-day experience for young people ages 13 to 21.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Titillium+Web:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --liberty-blue: #1F2C50;
+    --liberty-blue-2: #111A35;
+    --liberty-red: #E51F2D;
+    --liberty-grey: #575756;
+    --liberty-orange: #F9B13C;
+    --liberty-yellow: #EFC815;
+    --powder-blue: #69B0E2;
+    --ice: #EAF6FF;
+    --white: #FFFFFF;
+    --soft: #F6F8FC;
+    --ink: #17213D;
+    --muted: #5E6577;
+    --shadow: 0 24px 70px rgba(31, 44, 80, 0.18);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--soft);
+    color: var(--ink);
+    overflow-x: hidden;
+  }
+
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  .container { max-width: 1180px; margin: 0 auto; padding: 0 1.25rem; }
+
+  .section { padding: 5.5rem 0; position: relative; }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--liberty-red);
+    margin-bottom: 0.9rem;
+  }
+
+  .eyebrow::before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: var(--liberty-red);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 100%, 0 52%);
+  }
+
+  .section-title {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 4.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    color: var(--liberty-blue);
+    margin-bottom: 1.1rem;
+  }
+
+  .section-copy {
+    font-size: 1.03rem;
+    line-height: 1.8;
+    color: var(--muted);
+    max-width: 720px;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    min-height: 52px;
+    padding: 0.95rem 1.45rem;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+  }
+
+  .btn:hover { transform: translateY(-3px); }
+
+  .btn-primary {
+    color: var(--white);
+    background: var(--liberty-red);
+    box-shadow: 0 16px 34px rgba(229, 31, 45, 0.32);
+  }
+
+  .btn-primary:hover { background: #c91825; }
+
+  .btn-secondary {
+    color: var(--liberty-blue);
+    background: var(--white);
+    box-shadow: 0 16px 34px rgba(17, 26, 53, 0.16);
+  }
+
+  /* NAV */
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 78px;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(31, 44, 80, 0.08);
+  }
+
+  .nav-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .brand-logo { width: 185px; height: auto; }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    list-style: none;
+  }
+
+  .nav-links a:not(.nav-cta) {
+    font-size: 0.82rem;
+    font-weight: 800;
+    color: var(--liberty-blue);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .nav-cta {
+    background: var(--liberty-red);
+    color: var(--white);
+    padding: 0.78rem 1rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+  }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    padding: 9rem 0 5rem;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 16% 22%, rgba(105, 176, 226, 0.48), transparent 28%),
+      radial-gradient(circle at 92% 16%, rgba(229, 31, 45, 0.32), transparent 28%),
+      linear-gradient(135deg, #F8FBFF 0%, #EAF6FF 48%, #FFFFFF 100%);
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.09;
+    background-image:
+      linear-gradient(135deg, var(--liberty-blue) 0 45%, transparent 45% 100%),
+      linear-gradient(135deg, var(--liberty-red) 0 45%, transparent 45% 100%);
+    background-size: 74px 74px, 42px 42px;
+    background-position: 0 0, 38px 38px;
+    pointer-events: none;
+  }
+
+  .hero-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .badge-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.15rem; }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--white);
+    color: var(--liberty-blue);
+    border: 1px solid rgba(31, 44, 80, 0.09);
+    padding: 0.55rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    box-shadow: 0 10px 24px rgba(31, 44, 80, 0.08);
+  }
+
+  .badge.hot { background: var(--liberty-red); color: var(--white); border-color: var(--liberty-red); }
+
+  .hero h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: clamp(3.7rem, 9vw, 7.8rem);
+    line-height: 0.82;
+    letter-spacing: -0.065em;
+    color: var(--liberty-blue);
+    margin-bottom: 1.3rem;
+  }
+
+  .hero h1 span { color: var(--liberty-red); display: block; }
+
+  .hero-lead {
+    font-size: clamp(1.05rem, 2.2vw, 1.4rem);
+    line-height: 1.65;
+    color: #39435F;
+    max-width: 680px;
+    margin-bottom: 1.8rem;
+    font-weight: 600;
+  }
+
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.7rem; }
+
+  .quick-info {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    gap: 0.85rem;
+    max-width: 760px;
+  }
+
+  .quick-card {
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(31, 44, 80, 0.08);
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 12px 34px rgba(31, 44, 80, 0.08);
+  }
+
+  .quick-card .label {
+    font-size: 0.66rem;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--liberty-red);
+    margin-bottom: 0.28rem;
+  }
+
+  .quick-card .value { font-size: 0.92rem; font-weight: 900; color: var(--liberty-blue); }
+
+  .hero-card {
+    position: relative;
+    min-height: 560px;
+    border-radius: 34px;
+    padding: 1rem;
+    background: var(--liberty-blue);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .hero-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(135deg, rgba(229, 31, 45, 0.94), rgba(229, 31, 45, 0) 34%),
+      url('https://drive.google.com/thumbnail?id=1paO_r0KvOgWnk5h2V0pTdrA2JEpspUkY&sz=w1200');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.72;
+  }
+
+  .hero-card::after {
+    content: '';
+    position: absolute;
+    right: -70px;
+    bottom: -70px;
+    width: 250px;
+    height: 250px;
+    background: var(--liberty-yellow);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 44% 100%, 0 54%);
+    opacity: 0.95;
+  }
+
+  .hero-card-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    min-height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--white);
+  }
+
+  .floating-logo {
+    width: 220px;
+    background: rgba(255,255,255,0.92);
+    border-radius: 24px;
+    padding: 0.95rem;
+    box-shadow: 0 20px 44px rgba(0,0,0,0.18);
+  }
+
+  .hero-poster {
+    align-self: flex-end;
+    max-width: 315px;
+    padding: 1.15rem;
+    border-radius: 28px;
+    background: rgba(17, 26, 53, 0.88);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+  }
+
+  .poster-kicker { font-size: 0.72rem; font-weight: 900; letter-spacing: 0.14em; text-transform: uppercase; color: var(--powder-blue); }
+  .poster-title { font-family: 'Titillium Web', sans-serif; font-size: 2.4rem; line-height: 0.9; margin: 0.3rem 0 0.6rem; }
+  .poster-copy { font-size: 0.9rem; line-height: 1.55; color: rgba(255,255,255,0.76); }
+
+  /* RIBBON */
+  .ribbon {
+    background: var(--liberty-blue);
+    color: var(--white);
+    overflow: hidden;
+    padding: 0.95rem 0;
+    border-top: 6px solid var(--liberty-red);
+  }
+
+  .ribbon-track {
+    display: flex;
+    width: max-content;
+    gap: 1.4rem;
+    animation: ribbonMove 26s linear infinite;
+  }
+
+  .ribbon span {
+    white-space: nowrap;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+  }
+
+  @keyframes ribbonMove { to { transform: translateX(-50%); } }
+
+  .countdown-bar {
+    background: var(--liberty-red);
+    color: var(--white);
+    padding: 1.25rem;
+  }
+
+  .countdown-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.15rem;
+    flex-wrap: wrap;
+  }
+
+  .countdown-label { font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.78rem; }
+  .cd-unit { text-align: center; min-width: 70px; }
+  .cd-num { display: block; font-family: 'Titillium Web', sans-serif; font-size: 2.3rem; font-weight: 900; line-height: 0.9; }
+  .cd-lbl { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+
+  /* ABOUT */
+  .about { background: var(--white); }
+  .about-grid { display: grid; grid-template-columns: 0.92fr 1.08fr; gap: 3rem; align-items: center; }
+
+  .shape-photo {
+    position: relative;
+    min-height: 520px;
+    border-radius: 28px;
+    overflow: hidden;
+    background: var(--liberty-blue);
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 78% 100%, 0 100%);
+    box-shadow: var(--shadow);
+  }
+
+  .shape-photo img { width: 100%; height: 100%; min-height: 520px; object-fit: cover; opacity: 0.88; }
+
+  .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; margin-top: 2rem; }
+  .stat { background: var(--ice); border-radius: 22px; padding: 1rem; border: 1px solid rgba(105,176,226,0.35); }
+  .stat strong { display: block; font-family: 'Titillium Web', sans-serif; font-size: 2.45rem; line-height: 0.9; color: var(--liberty-red); }
+  .stat span { display: block; margin-top: 0.45rem; font-size: 0.76rem; font-weight: 800; color: var(--liberty-blue); text-transform: uppercase; letter-spacing: 0.08em; }
+
+  /* VIDEO */
+  .video { background: var(--liberty-blue); color: var(--white); overflow: hidden; }
+  .video .section-title, .video .section-copy { color: var(--white); }
+  .video .section-copy { color: rgba(255,255,255,0.75); }
+  .video-wrap {
+    position: relative;
+    margin-top: 2.5rem;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 10px solid rgba(255,255,255,0.11);
+    box-shadow: 0 28px 80px rgba(0,0,0,0.28);
+  }
+  .video-wrap::before { content: ''; display: block; padding-top: 56.25%; }
+  .video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+  /* OUTCOMES */
+  .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; margin-top: 2.6rem; }
+  .gain-card {
+    position: relative;
+    min-height: 235px;
+    padding: 1.45rem;
+    border-radius: 28px;
+    background: var(--white);
+    box-shadow: 0 14px 44px rgba(31, 44, 80, 0.09);
+    border: 1px solid rgba(31,44,80,0.08);
+    overflow: hidden;
+  }
+  .gain-card::after {
+    content: '';
+    position: absolute;
+    right: -26px;
+    top: -26px;
+    width: 86px;
+    height: 86px;
+    background: var(--powder-blue);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 100%, 0 52%);
+    opacity: 0.72;
+  }
+  .gain-card:nth-child(even)::after { background: var(--liberty-red); }
+  .gain-icon { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 18px; background: var(--liberty-blue); color: var(--white); font-size: 1.4rem; margin-bottom: 1rem; }
+  .gain-title { font-size: 1.08rem; font-weight: 900; color: var(--liberty-blue); margin-bottom: 0.6rem; }
+  .gain-desc { font-size: 0.9rem; line-height: 1.75; color: var(--muted); }
+
+
+
+  /* SPEAKERS */
+  .speakers {
+    background:
+      radial-gradient(circle at 8% 16%, rgba(105, 176, 226, 0.28), transparent 28%),
+      radial-gradient(circle at 88% 12%, rgba(229, 31, 45, 0.16), transparent 24%),
+      var(--white);
+    overflow: hidden;
+  }
+
+  .speakers::before {
+    content: '';
+    position: absolute;
+    right: -80px;
+    top: 80px;
+    width: 360px;
+    height: 360px;
+    background-image: linear-gradient(135deg, var(--liberty-blue) 25%, transparent 25%), linear-gradient(135deg, var(--liberty-red) 25%, transparent 25%);
+    background-size: 42px 42px;
+    background-position: 0 0, 21px 21px;
+    opacity: 0.055;
+    transform: rotate(-8deg);
+  }
+
+  .speakers-head {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .speakers-note {
+    max-width: 360px;
+    background: var(--ice);
+    color: var(--liberty-blue);
+    border-left: 6px solid var(--liberty-red);
+    border-radius: 20px;
+    padding: 1rem 1.15rem;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    font-weight: 700;
+  }
+
+  .speaker-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.35rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .speaker-card {
+    position: relative;
+    min-height: 390px;
+    perspective: 1200px;
+    outline: none;
+  }
+
+  .speaker-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 390px;
+    transform-style: preserve-3d;
+    transition: transform 0.72s cubic-bezier(.2,.75,.22,1);
+  }
+
+  .speaker-card:hover .speaker-card-inner,
+  .speaker-card:focus .speaker-card-inner,
+  .speaker-card:focus-within .speaker-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .speaker-face {
+    position: absolute;
+    inset: 0;
+    border-radius: 30px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 24px 60px rgba(31, 44, 80, 0.16);
+  }
+
+  .speaker-front {
+    background: var(--liberty-blue);
+  }
+
+  .speaker-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(1.05) contrast(1.03);
+  }
+
+  .speaker-front::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 58%;
+    background: linear-gradient(180deg, transparent, rgba(17, 26, 53, 0.94));
+  }
+
+  .speaker-front::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+    background: var(--liberty-red);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 100%, 0 52%);
+    z-index: 2;
+  }
+
+  .speaker-meta {
+    position: absolute;
+    left: 1.2rem;
+    right: 1.2rem;
+    bottom: 1.15rem;
+    z-index: 3;
+    color: var(--white);
+  }
+
+  .speaker-meta h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.65rem;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+  }
+
+  .speaker-meta p {
+    margin-top: 0.45rem;
+    color: rgba(255,255,255,0.76);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .speaker-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    background:
+      linear-gradient(135deg, rgba(31, 44, 80, 0.98), rgba(17, 26, 53, 0.98)),
+      var(--liberty-blue);
+    color: var(--white);
+    padding: 1.55rem;
+    transform: rotateY(180deg);
+  }
+
+  .speaker-back::before {
+    content: '';
+    position: absolute;
+    right: -32px;
+    bottom: -32px;
+    width: 155px;
+    height: 155px;
+    background: var(--liberty-red);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 100%, 0 52%);
+    opacity: 0.22;
+  }
+
+  .speaker-bio-label {
+    color: var(--liberty-yellow);
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .speaker-back h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.7rem;
+    line-height: 0.95;
+    margin: 0.6rem 0 0.75rem;
+  }
+
+  .speaker-back p {
+    color: rgba(255,255,255,0.78);
+    font-size: 0.9rem;
+    line-height: 1.65;
+    font-weight: 600;
+  }
+
+  .speaker-topic {
+    display: inline-flex;
+    align-self: flex-start;
+    background: var(--white);
+    color: var(--liberty-blue);
+    border-radius: 999px;
+    padding: 0.55rem 0.85rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* GALLERY */
+  .gallery { background: var(--ice); }
+  .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 230px; gap: 0.9rem; margin-top: 2.6rem; }
+  .gallery-cell { position: relative; overflow: hidden; border-radius: 26px; background: var(--liberty-blue); box-shadow: 0 16px 38px rgba(31,44,80,0.13); }
+  .gallery-cell.wide { grid-column: span 2; }
+  .gallery-cell.tall { grid-row: span 2; }
+  .gallery-cell img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.45s ease; }
+  .gallery-cell:hover img { transform: scale(1.06); }
+  .gallery-cell::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(17,26,53,0.5), transparent 56%); }
+
+  /* FOR */
+  .for { background: var(--white); }
+  .for-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2.4rem; }
+  .for-card {
+    border-radius: 28px;
+    padding: 1.5rem;
+    color: var(--white);
+    background: var(--liberty-blue);
+    min-height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+  }
+  .for-card:nth-child(2) { background: var(--liberty-red); }
+  .for-card:nth-child(3) { background: var(--powder-blue); color: var(--liberty-blue); }
+  .for-card::before { content: ''; position: absolute; right: -20px; top: -20px; width: 95px; height: 95px; background: rgba(255,255,255,0.18); clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 100%, 0 52%); }
+  .for-card strong { font-family: 'Titillium Web', sans-serif; font-size: 3.2rem; line-height: 0.9; }
+  .for-card span { display: block; font-size: 0.93rem; line-height: 1.55; font-weight: 700; margin-top: 1rem; }
+
+  /* REGISTER */
+  .register {
+    color: var(--white);
+    background:
+      radial-gradient(circle at 10% 20%, rgba(105,176,226,0.38), transparent 26%),
+      radial-gradient(circle at 84% 20%, rgba(229,31,45,0.42), transparent 28%),
+      linear-gradient(135deg, var(--liberty-blue) 0%, var(--liberty-blue-2) 100%);
+    overflow: hidden;
+  }
+  .register::before {
+    content: '10';
+    position: absolute;
+    right: -26px;
+    top: -64px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22rem;
+    line-height: 1;
+    font-weight: 900;
+    color: rgba(255,255,255,0.045);
+  }
+  .register-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 0.85fr; gap: 2.2rem; align-items: center; }
+  .register .section-title, .register .section-copy { color: var(--white); }
+  .register .section-copy { color: rgba(255,255,255,0.75); }
+  .register-card {
+    background: rgba(255,255,255,0.09);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 34px;
+    padding: 2rem;
+    backdrop-filter: blur(12px);
+  }
+  .free { font-family: 'Titillium Web', sans-serif; font-size: 4.8rem; line-height: 0.9; font-weight: 900; color: var(--liberty-yellow); }
+  .includes { list-style: none; display: grid; gap: 0.8rem; margin: 1.4rem 0; }
+  .includes li { display: flex; gap: 0.65rem; line-height: 1.5; color: rgba(255,255,255,0.82); font-weight: 600; }
+  .includes li::before { content: '✓'; color: var(--liberty-yellow); font-weight: 900; }
+
+  footer {
+    padding: 3rem 0;
+    text-align: center;
+    background: #111A35;
+    color: var(--white);
+  }
+  .footer-logo { width: 220px; margin: 0 auto 1rem; background: var(--white); border-radius: 22px; padding: 0.9rem; }
+  .footer-links { display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; margin: 1.4rem 0; }
+  .footer-links a { color: rgba(255,255,255,0.78); text-decoration: none; font-weight: 700; font-size: 0.85rem; }
+  .footer-copy { color: rgba(255,255,255,0.44); font-size: 0.78rem; }
+
+
+
+  /* EMBEDDED REGISTRATION FORM */
+  .registration-form-section {
+    background:
+      radial-gradient(circle at 8% 12%, rgba(239, 200, 21, 0.24), transparent 26%),
+      radial-gradient(circle at 91% 18%, rgba(105, 176, 226, 0.28), transparent 24%),
+      linear-gradient(180deg, #F6F8FC 0%, #FFFFFF 100%);
+    overflow: hidden;
+  }
+  .registration-form-section::before {
+    content: '';
+    position: absolute;
+    left: -56px;
+    bottom: -62px;
+    width: 210px;
+    height: 210px;
+    background: var(--liberty-blue);
+    opacity: 0.08;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 100%, 0 52%);
+  }
+  .registration-form-header {
+    text-align: center;
+    max-width: 820px;
+    margin: 0 auto 2.4rem;
+  }
+  .registration-form-header .section-copy {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .registration-benefits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.9rem;
+    max-width: 980px;
+    margin: 0 auto 2rem;
+  }
+  .benefit {
+    border-radius: 20px;
+    padding: 1rem;
+    background: var(--white);
+    border: 1px solid rgba(31, 44, 80, 0.08);
+    color: var(--liberty-blue);
+    font-weight: 900;
+    text-align: center;
+    box-shadow: 0 14px 30px rgba(31, 44, 80, 0.08);
+  }
+  .registration-card {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: clamp(1rem, 4vw, 2.4rem);
+    border-radius: 34px;
+    background: var(--white);
+    border: 1px solid rgba(31, 44, 80, 0.08);
+    border-top: 10px solid var(--liberty-red);
+    box-shadow: var(--shadow);
+  }
+  .registration-card::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 26px;
+    width: 70px;
+    height: 70px;
+    background: var(--liberty-yellow);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 100%, 0 52%);
+  }
+  .registration-card #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    background: transparent !important;
+  }
+  .registration-card #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody,
+  .registration-card #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+    padding: 0 !important;
+  }
+  .registration-card #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-formContent {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.85rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .registration-card #mlb2-42735190 .ml-form-fieldRow {
+    margin: 0 !important;
+  }
+  .registration-card #mlb2-42735190 .ml-field-address,
+  .registration-card #mlb2-42735190 .ml-field-gender,
+  .registration-card #mlb2-42735190 .ml-field-declaration,
+  .registration-card #mlb2-42735190 .ml-field-job_title,
+  .registration-card #mlb2-42735190 .ml-field-professional_area {
+    grid-column: 1 / -1 !important;
+  }
+  .registration-card #mlb2-42735190 input,
+  .registration-card #mlb2-42735190 textarea,
+  .registration-card #mlb2-42735190 select {
+    border-radius: 15px !important;
+    border: 1px solid rgba(31, 44, 80, 0.18) !important;
+    background: #F8FAFE !important;
+    color: var(--liberty-blue) !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 0.95rem !important;
+    padding: 0.9rem 1rem !important;
+  }
+  .registration-card #mlb2-42735190 textarea { min-height: 110px !important; }
+  .registration-card #mlb2-42735190 input:focus,
+  .registration-card #mlb2-42735190 textarea:focus {
+    border-color: var(--liberty-red) !important;
+    outline: 3px solid rgba(229, 31, 45, 0.12) !important;
+  }
+  .registration-card #mlb2-42735190 .custom-checkbox-radio-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem;
+    padding: 0.75rem;
+    border-radius: 18px;
+    background: #F8FAFE;
+    border: 1px solid rgba(31, 44, 80, 0.08);
+  }
+  .registration-card #mlb2-42735190 .custom-control-label,
+  .registration-card #mlb2-42735190 .label-description,
+  .registration-card #mlb2-42735190 .label-description p {
+    font-family: 'Montserrat', sans-serif !important;
+    color: var(--liberty-blue) !important;
+  }
+  .registration-card #mlb2-42735190 .ml-form-embedSubmit button.primary {
+    background: var(--liberty-red) !important;
+    border-radius: 16px !important;
+    padding: 1rem 1.3rem !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 0.98rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.06em !important;
+  }
+  .registration-card #mlb2-42735190 .ml-form-embedSubmit button.primary:hover {
+    background: #c91825 !important;
+  }
+  .registration-card #mlb2-42735190 .ml-form-successContent {
+    text-align: center !important;
+    padding: 2rem !important;
+  }
+  .registration-card #mlb2-42735190 .ml-form-successContent h4 {
+    font-family: 'Titillium Web', sans-serif !important;
+    color: var(--liberty-blue) !important;
+    font-size: 2.5rem !important;
+    font-weight: 900 !important;
+    text-align: center !important;
+  }
+  @media (max-width: 940px) {
+    .nav-links a:not(.nav-cta) { display: none; }
+    .hero-grid, .about-grid, .register-grid { grid-template-columns: 1fr; }
+    .hero-card { min-height: 460px; }
+    .quick-info { grid-template-columns: repeat(2, 1fr); }
+    .cards-grid, .for-grid { grid-template-columns: 1fr; }
+    .speakers-head { align-items: start; flex-direction: column; }
+    .speaker-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 210px; }
+    .gallery-cell.tall { grid-row: span 1; }
+  }
+
+  @media (max-width: 580px) {
+    .nav { height: 70px; }
+    .brand-logo { width: 145px; }
+    .nav-cta { padding: 0.65rem 0.8rem; font-size: 0.7rem; }
+    .hero { padding-top: 8rem; }
+    .hero h1 { font-size: clamp(3.05rem, 17vw, 4.4rem); }
+    .quick-info { grid-template-columns: 1fr; }
+    .hero-actions .btn { width: 100%; }
+    .floating-logo { width: 178px; }
+    .hero-poster { max-width: 100%; align-self: stretch; }
+    .stat-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr; }
+    .speaker-grid { grid-template-columns: 1fr; }
+    .speaker-card, .speaker-card-inner { min-height: 370px; }
+    .gallery-cell.wide { grid-column: span 1; }
+    .section { padding: 4rem 0; }
+    .countdown-inner { gap: 0.75rem; }
+    .cd-unit { min-width: 58px; }
+    .cd-num { font-size: 1.85rem; }
+  }
+
+  @media (max-width: 720px) {
+    .registration-benefits { grid-template-columns: repeat(2, 1fr); }
+    .registration-card #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-formContent { grid-template-columns: 1fr !important; }
+    .registration-card #mlb2-42735190 .custom-checkbox-radio-list { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#top" aria-label="Liberty Career Academy home"><img class="brand-logo" src="data:image/png;base64,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" alt="Liberty Career Academy logo"></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#speakers">Speakers</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#registration-form" class="nav-cta">Register Free</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="badge-row">
+        <span class="badge hot">10th Edition</span>
+        <span class="badge">Ages 13 to 21</span>
+        <span class="badge">Free Entry</span>
+      </div>
+      <h1>Career &amp;<span>Stewardship</span>Bootcamp</h1>
+      <p class="hero-lead">A high-energy two-day experience for young people ready to discover their strengths, build career confidence, learn money wisdom, and connect with mentors who believe in their future.</p>
+      <div class="hero-actions">
+        <a href="#registration-form" class="btn btn-primary">Register for Free →</a>
+        <a href="#highlights" class="btn btn-secondary">Watch 2025 Highlights</a>
+      </div>
+      <div class="quick-info">
+        <div class="quick-card"><div class="label">Date</div><div class="value">Wed. 12 - Thur. 13, August 2026</div></div>
+        <div class="quick-card"><div class="label">Time</div><div class="value">8:30am - 4pm daily</div></div>
+        <div class="quick-card"><div class="label">Format</div><div class="value">In-Person</div></div>
+      </div>
+    </div>
+    <div class="hero-card" aria-label="CAS Bootcamp visual highlight">
+      <div class="hero-card-content">
+        <img class="floating-logo" src="data:image/png;base64,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" alt="Liberty Career Academy logo">
+        <div class="hero-poster">
+          <div class="poster-kicker">Discover. Engage. Evolve.</div>
+          <div class="poster-title">Own your next move.</div>
+          <p class="poster-copy">Real conversations, practical workshops, mentor access, career direction, and a community of young builders.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ribbon" aria-hidden="true">
+  <div class="ribbon-track">
+    <span>10 Years of Impact</span><span>•</span><span>Young Africans Rising</span><span>•</span><span>Careers Built with Purpose</span><span>•</span><span>Stewardship for Life</span><span>•</span><span>CAS Bootcamp 2026</span><span>•</span>
+    <span>10 Years of Impact</span><span>•</span><span>Young Africans Rising</span><span>•</span><span>Careers Built with Purpose</span><span>•</span><span>Stewardship for Life</span><span>•</span><span>CAS Bootcamp 2026</span><span>•</span>
+  </div>
+</div>
+
+<div class="countdown-bar">
+  <div class="countdown-inner">
+    <div class="countdown-label">Countdown to the 10th Edition</div>
+    <div class="cd-unit"><span class="cd-num" id="cd-days">00</span><span class="cd-lbl">Days</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-hours">00</span><span class="cd-lbl">Hours</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-mins">00</span><span class="cd-lbl">Minutes</span></div>
+    <div class="cd-unit"><span class="cd-num" id="cd-secs">00</span><span class="cd-lbl">Seconds</span></div>
+  </div>
+</div>
+
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div class="shape-photo">
+      <img src="https://drive.google.com/thumbnail?id=1paO_r0KvOgWnk5h2V0pTdrA2JEpspUkY&sz=w1200" alt="CAS Bootcamp participants">
+    </div>
+    <div>
+      <p class="eyebrow">About the Bootcamp</p>
+      <h2 class="section-title">Not just a workshop. A launchpad.</h2>
+      <p class="section-copy">For a decade, Liberty Career Academy has helped young people discover their abilities, grow the right competencies, and express those gifts through career, enterprise, leadership, and service. This 10th edition is designed to be bold, practical, inspiring, and unforgettable.</p>
+      <p class="section-copy" style="margin-top: 1rem;">Come ready for career clarity, financial intelligence, values-based mentoring, peer connection, and practical next steps you can use immediately.</p>
+      <div class="stat-grid">
+        <div class="stat"><strong>10</strong><span>Editions of impact</span></div>
+        <div class="stat"><strong>2</strong><span>Powerful days</span></div>
+        <div class="stat"><strong>13-21</strong><span>Age range</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section video" id="highlights">
+  <div class="container">
+    <p class="eyebrow">2025 Highlights</p>
+    <h2 class="section-title">See the energy from last year.</h2>
+    <p class="section-copy">Watch the moments, the conversations, and the atmosphere that made the last edition memorable.</p>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/IkFGPhS7ta4" title="CAS Bootcamp 2025 Highlights" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section outcomes">
+  <div class="container">
+    <p class="eyebrow">What You Will Gain</p>
+    <h2 class="section-title">Two days. Real direction.</h2>
+    <p class="section-copy">The bootcamp blends inspiration with practical tools, interactive sessions, and collaborative experiences designed to help every participant learn, connect, and present with confidence.</p>
+    <div class="cards-grid">
+      <div class="gain-card"><div class="gain-icon">🎤</div><div class="gain-title">4 Keynote Sessions</div><div class="gain-desc">Big-picture conversations that inspire purpose, career confidence, leadership, and a stronger sense of stewardship.</div></div>
+      <div class="gain-card"><div class="gain-icon">🧠</div><div class="gain-title">3 x 2 Specialized Masterclass</div><div class="gain-desc">Focused breakout-style learning designed to help participants build practical skills in areas that matter for their future.</div></div>
+      <div class="gain-card"><div class="gain-icon">💬</div><div class="gain-title">2 Talent Panels</div><div class="gain-desc">Real conversations with emerging and experienced talents sharing honest lessons, career paths, and practical guidance.</div></div>
+      <div class="gain-card"><div class="gain-icon">🎮</div><div class="gain-title">Gamified Learning</div><div class="gain-desc">Interactive challenges and activities that make learning energetic, memorable, and fun for young participants.</div></div>
+      <div class="gain-card"><div class="gain-icon">🤝</div><div class="gain-title">Peer Networking</div><div class="gain-desc">Meet other focused young people, form new connections, and build relationships with peers who are growing in the same direction.</div></div>
+      <div class="gain-card"><div class="gain-icon">🏆</div><div class="gain-title">Team Presentations</div><div class="gain-desc">Work with a team, sharpen your ideas, and present with confidence in a supportive, high-energy environment.</div></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section speakers" id="speakers">
+  <div class="container">
+    <div class="speakers-head">
+      <div>
+        <p class="eyebrow">Meet the Speakers</p>
+        <h2 class="section-title">Eight voices. One goal.</h2>
+        <p class="section-copy">A vibrant lineup of mentors, founders, professionals, and leaders ready to help young people think clearly, dream boldly, and take practical next steps.</p>
+      </div>
+      <div class="speakers-note">Hover or tap each card to reveal the speaker bio. Replace the placeholder names, photos, and bios once the final speaker list is confirmed.</div>
+    </div>
+    <div class="speaker-grid">
+      <article class="speaker-card" tabindex="0">
+        <div class="speaker-card-inner">
+          <div class="speaker-face speaker-front">
+            <img src="https://placehold.co/700x900/1F2C50/FFFFFF?text=Speaker+1" alt="Speaker 1 portrait">
+            <div class="speaker-meta"><h3>Speaker Name 1</h3><p>Career Strategy</p></div>
+          </div>
+          <div class="speaker-face speaker-back">
+            <div><span class="speaker-bio-label">Bio</span><h3>Speaker Name 1</h3><p>A practical mentor with experience helping young people identify their strengths, make better career choices, and build confidence for the future.</p></div>
+            <span class="speaker-topic">Own Your Path</span>
+          </div>
+        </div>
+      </article>
+      <article class="speaker-card" tabindex="0">
+        <div class="speaker-card-inner">
+          <div class="speaker-face speaker-front">
+            <img src="https://placehold.co/700x900/E51F2D/FFFFFF?text=Speaker+2" alt="Speaker 2 portrait">
+            <div class="speaker-meta"><h3>Speaker Name 2</h3><p>Money Mindset</p></div>
+          </div>
+          <div class="speaker-face speaker-back">
+            <div><span class="speaker-bio-label">Bio</span><h3>Speaker Name 2</h3><p>A financial educator focused on helping teenagers and young adults build healthy money habits, stewardship thinking, and long-term discipline.</p></div>
+            <span class="speaker-topic">Build Wisely</span>
+          </div>
+        </div>
+      </article>
+      <article class="speaker-card" tabindex="0">
+        <div class="speaker-card-inner">
+          <div class="speaker-face speaker-front">
+            <img src="https://placehold.co/700x900/69B0E2/1F2C50?text=Speaker+3" alt="Speaker 3 portrait">
+            <div class="speaker-meta"><h3>Speaker Name 3</h3><p>Leadership</p></div>
+          </div>
+          <div class="speaker-face speaker-back">
+            <div><span class="speaker-bio-label">Bio</span><h3>Speaker Name 3</h3><p>A leadership coach who helps emerging leaders communicate with clarity, serve with integrity, and lead with courage in school, work, and community.</p></div>
+            <span class="speaker-topic">Lead Early</span>
+          </div>
+        </div>
+      </article>
+      <article class="speaker-card" tabindex="0">
+        <div class="speaker-card-inner">
+          <div class="speaker-face speaker-front">
+            <img src="https://placehold.co/700x900/F9B13C/1F2C50?text=Speaker+4" alt="Speaker 4 portrait">
+            <div class="speaker-meta"><h3>Speaker Name 4</h3><p>Enterprise</p></div>
+          </div>
+          <div class="speaker-face speaker-back">
+            <div><span class="speaker-bio-label">Bio</span><h3>Speaker Name 4</h3><p>An entrepreneur and builder who teaches young people how to turn ideas into useful projects, solve real problems, and start with available resources.</p></div>
+            <span class="speaker-topic">Start Small</span>
+          </div>
+        </div>
+      </article>
+      <article class="speaker-card" tabindex="0">
+        <div class="speaker-card-inner">
+          <div class="speaker-face speaker-front">
+            <img src="https://placehold.co/700x900/EFC815/1F2C50?text=Speaker+5" alt="Speaker 5 portrait">
+            <div class="speaker-meta"><h3>Speaker Name 5</h3><p>Technology</p></div>
+          </div>
+          <div class="speaker-face speaker-back">
+            <div><span class="speaker-bio-label">Bio</span><h3>Speaker Name 5</h3><p>A technology professional showing participants how digital skills, curiosity, and consistent learning can open doors across modern career paths.</p></div>
+            <span class="speaker-topic">Future Skills</span>
+          </div>
+        </div>
+      </article>
+      <article class="speaker-card" tabindex="0">
+        <div class="speaker-card-inner">
+          <div class="speaker-face speaker-front">
+            <img src="https://placehold.co/700x900/575756/FFFFFF?text=Speaker+6" alt="Speaker 6 portrait">
+            <div class="speaker-meta"><h3>Speaker Name 6</h3><p>Personal Growth</p></div>
+          </div>
+          <div class="speaker-face speaker-back">
+            <div><span class="speaker-bio-label">Bio</span><h3>Speaker Name 6</h3><p>A personal development guide helping young people manage pressure, comparison, identity, and habits while building a stronger inner foundation.</p></div>
+            <span class="speaker-topic">Grow Inside</span>
+          </div>
+        </div>
+      </article>
+      <article class="speaker-card" tabindex="0">
+        <div class="speaker-card-inner">
+          <div class="speaker-face speaker-front">
+            <img src="https://placehold.co/700x900/111A35/FFFFFF?text=Speaker+7" alt="Speaker 7 portrait">
+            <div class="speaker-meta"><h3>Speaker Name 7</h3><p>Purpose</p></div>
+          </div>
+          <div class="speaker-face speaker-back">
+            <div><span class="speaker-bio-label">Bio</span><h3>Speaker Name 7</h3><p>A purpose-driven communicator helping participants connect their abilities, values, and opportunities to a life of meaningful contribution.</p></div>
+            <span class="speaker-topic">Live on Purpose</span>
+          </div>
+        </div>
+      </article>
+      <article class="speaker-card" tabindex="0">
+        <div class="speaker-card-inner">
+          <div class="speaker-face speaker-front">
+            <img src="https://placehold.co/700x900/FFFFFF/1F2C50?text=Speaker+8" alt="Speaker 8 portrait">
+            <div class="speaker-meta"><h3>Speaker Name 8</h3><p>Mentorship</p></div>
+          </div>
+          <div class="speaker-face speaker-back">
+            <div><span class="speaker-bio-label">Bio</span><h3>Speaker Name 8</h3><p>A mentor and community builder passionate about helping young people ask better questions, find guidance, and build strong relationships.</p></div>
+            <span class="speaker-topic">Find Your Circle</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <p class="eyebrow">From the Floor</p>
+    <h2 class="section-title">Moments from CAS Bootcamp.</h2>
+    <div class="gallery-grid">
+      <div class="gallery-cell tall"><img src="https://lcaglobal.org/casbootcamp/wp-content/uploads/2024/06/IMG_7147.jpg" alt="CAS Bootcamp session"></div>
+      <div class="gallery-cell"><img src="https://lcaglobal.org/casbootcamp/wp-content/uploads/2024/06/cas-bootcamp-7.jpg" alt="CAS Bootcamp participants"></div>
+      <div class="gallery-cell"><img src="https://lcaglobal.org/casbootcamp/wp-content/uploads/2024/06/virtual-conference-15.png" alt="CAS Bootcamp workshop"></div>
+      <div class="gallery-cell wide"><img src="https://lcaglobal.org/casbootcamp/wp-content/uploads/2024/06/IMG_7147.jpg" alt="CAS Bootcamp group"></div>
+      <div class="gallery-cell"><img src="https://lcaglobal.org/casbootcamp/wp-content/uploads/2024/06/cas-bootcamp-7.jpg" alt="CAS Bootcamp speaker"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section for">
+  <div class="container">
+    <p class="eyebrow">Who Should Attend</p>
+    <h2 class="section-title">Built for ages 13 to 21.</h2>
+    <p class="section-copy">Whether you are in secondary school, preparing for university, learning a skill, starting a business idea, or trying to make sense of your future, this room is for you.</p>
+    <div class="for-grid">
+      <div class="for-card"><strong>13-15</strong><span>Students beginning to ask big questions about strengths, choices, and future possibilities.</span></div>
+      <div class="for-card"><strong>16-18</strong><span>Teenagers preparing for major academic, career, skill, and identity decisions.</span></div>
+      <div class="for-card"><strong>19-21</strong><span>Young adults ready to gain direction, confidence, money wisdom, and practical momentum.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section register" id="register">
+  <div class="container register-grid">
+    <div>
+      <p class="eyebrow">Registration</p>
+      <h2 class="section-title">Secure your seat for the 10th Edition.</h2>
+      <p class="section-copy">Registration is free, but space is limited. Reserve your spot now and get ready for two days of learning, discovery, connection, and action.</p>
+    </div>
+    <div class="register-card">
+      <div class="free">Free</div>
+      <ul class="includes">
+        <li>Two full days of training and workshops</li>
+        <li>Career, stewardship, and money sessions</li>
+        <li>Mentor insights and practical guidance</li>
+        <li>Peer networking and community</li>
+        <li>Certificate of participation</li>
+      </ul>
+      <a href="#registration-form" class="btn btn-primary" style="width:100%;">Register Now →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- REGISTRATION FORM -->
+<section class="section registration-form-section" id="registration-form">
+  <div class="container">
+    <div class="registration-form-header">
+      <p class="eyebrow">CAS Bootcamp 2026</p>
+      <h2 class="section-title">Reserve Your Seat</h2>
+      <p class="section-copy">Registration is completely free. Complete the form below to secure your place at the 10th Edition of the Career &amp; Stewardship Bootcamp.</p>
+    </div>
+
+    <div class="registration-benefits" aria-label="Registration benefits">
+      <div class="benefit">🎤 Inspiring Speakers</div>
+      <div class="benefit">🤝 Real Connections</div>
+      <div class="benefit">📘 Free Workbook</div>
+      <div class="benefit">🏆 Certificate</div>
+    </div>
+
+    <div class="registration-card">
+<style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1781524");</style>
+    <style type="text/css">
+    /* LOADER */
+    .ml-form-embedSubmitLoad {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+    }
+
+    .g-recaptcha {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    height: ;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+
+    .ml-form-embedSubmitLoad:after {
+      content: " ";
+      display: block;
+      width: 11px;
+      height: 11px;
+      margin: 1px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+    border-color: #ffffff #ffffff #ffffff transparent;
+    animation: ml-form-embedSubmitLoad 1.2s linear infinite;
+    }
+    @keyframes ml-form-embedSubmitLoad {
+      0% {
+      transform: rotate(0deg);
+      }
+      100% {
+      transform: rotate(360deg);
+      }
+    }
+      #mlb2-42735190.ml-form-embedContainer {
+        box-sizing: border-box;
+        display: table;
+        margin: 0 auto;
+        position: static;
+        width: 100% !important;
+      }
+      #mlb2-42735190.ml-form-embedContainer h4,
+      #mlb2-42735190.ml-form-embedContainer p,
+      #mlb2-42735190.ml-form-embedContainer span,
+      #mlb2-42735190.ml-form-embedContainer button {
+        text-transform: none !important;
+        letter-spacing: normal !important;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper {
+        background-color: #f6f6f6;
+        
+        border-width: 0px;
+        border-color: transparent;
+        border-radius: 4px;
+        border-style: solid;
+        box-sizing: border-box;
+        display: inline-block !important;
+        margin: 0;
+        padding: 0;
+        position: relative;
+              }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper.embedPopup,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper.embedDefault { width: 400px; }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper.embedForm { max-width: 400px; width: 100%; }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-align-left { text-align: left; }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-align-center { text-align: center; }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-align-default { display: table-cell !important; vertical-align: middle !important; text-align: center !important; }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-align-right { text-align: right; }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedHeader img {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        height: auto;
+        margin: 0 auto !important;
+        max-width: 100%;
+        width: undefinedpx;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+        padding: 20px 20px 0 20px;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody.ml-form-embedBodyHorizontal {
+        padding-bottom: 0;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+        text-align: left;
+        margin: 0 0 20px 0;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4 {
+        color: #000000;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        margin: 0 0 10px 0;
+        text-align: left;
+        word-break: break-word;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
+        color: #000000;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 0 0 10px 0;
+        text-align: left;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ul,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ul,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol {
+        color: #000000;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol ol,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol ol {
+        list-style-type: lower-alpha;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol ol ol,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol ol ol {
+        list-style-type: lower-roman;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p a,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p a {
+        color: #000000;
+        text-decoration: underline;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group {
+        text-align: left!important;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group label {
+        margin-bottom: 5px;
+        color: #333333;
+        font-size: 14px;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-weight: bold; font-style: normal; text-decoration: none;;
+        display: inline-block;
+        line-height: 20px;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p:last-child,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p:last-child {
+        margin: 0;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody form {
+        margin: 0;
+        width: 100%;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
+        margin: 0 0 20px 0;
+        width: 100%;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
+        float: left;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent.horozintalForm {
+        margin: 0;
+        padding: 0 0 20px 0;
+        width: 100%;
+        height: auto;
+        float: left;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow {
+        margin: 0 0 10px 0;
+        width: 100%;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-last-item {
+        margin: 0;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-formfieldHorizintal {
+        margin: 0;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
+        background-color: #ffffff !important;
+        color: #333333 !important;
+        border-color: #cccccc;
+        border-radius: 4px !important;
+        border-style: solid !important;
+        border-width: 1px !important;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-size: 14px !important;
+        height: auto;
+        line-height: 21px !important;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px 10px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        max-width: 100% !important;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-webkit-input-placeholder,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-webkit-input-placeholder { color: #333333; }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-moz-placeholder,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-moz-placeholder { color: #333333; }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:-ms-input-placeholder,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:-ms-input-placeholder { color: #333333; }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:-moz-placeholder,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:-moz-placeholder { color: #333333; }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow textarea, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow textarea {
+        background-color: #ffffff !important;
+        color: #333333 !important;
+        border-color: #cccccc;
+        border-radius: 4px !important;
+        border-style: solid !important;
+        border-width: 1px !important;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-size: 14px !important;
+        height: auto;
+        line-height: 21px !important;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 10px 10px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        max-width: 100% !important;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
+          border-color: #cccccc!important;
+          background-color: #ffffff!important;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input.custom-control-input[type="checkbox"]{
+        box-sizing: border-box;
+        padding: 0;
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        margin-top: 5px;
+        margin-left: -1.5rem;
+        overflow: visible;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
+        border-radius: 4px!important;
+      }
+
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]:checked~.label-description::after, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]:checked~.label-description::after, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox input[type=checkbox]:checked~.label-description::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::after, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-input:checked~.custom-control-label::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input:checked~.custom-control-label::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input:checked~.custom-control-label::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]:checked~.label-description::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox input[type=checkbox]:checked~.label-description::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]:checked~.label-description::before  {
+          border-color: #000000!important;
+          background-color: #000000!important;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::after, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::after, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::after, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::after {
+           top: 2px;
+           box-sizing: border-box;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+           top: 0px!important;
+           box-sizing: border-box!important;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+        top: 0px!important;
+           box-sizing: border-box!important;
+      }
+
+       #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::after {
+            top: 0px!important;
+            box-sizing: border-box!important;
+            position: absolute;
+            left: -1.5rem;
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            content: "";
+       }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before {
+        top: 0px!important;
+        box-sizing: border-box!important;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-control-label::before {
+          position: absolute;
+          top: 4px;
+          left: -1.5rem;
+          display: block;
+          width: 16px;
+          height: 16px;
+          pointer-events: none;
+          content: "";
+          background-color: #ffffff;
+          border: #adb5bd solid 1px;
+          border-radius: 50%;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-control-label::after {
+          position: absolute;
+          top: 2px!important;
+          left: -1.5rem;
+          display: block;
+          width: 1rem;
+          height: 1rem;
+          content: "";
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
+          position: absolute;
+          top: 4px;
+          left: -1.5rem;
+          display: block;
+          width: 16px;
+          height: 16px;
+          pointer-events: none;
+          content: "";
+          background-color: #ffffff;
+          border: #adb5bd solid 1px;
+          border-radius: 50%;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after {
+          position: absolute;
+          top: 0px!important;
+          left: -1.5rem;
+          display: block;
+          width: 1rem;
+          height: 1rem;
+          content: "";
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+          position: absolute;
+          top: 0px!important;
+          left: -1.5rem;
+          display: block;
+          width: 1rem;
+          height: 1rem;
+          content: "";
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-radio .custom-control-label::after {
+          background: no-repeat 50%/50% 50%;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-checkbox .custom-control-label::after, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::after, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+          background: no-repeat 50%/50% 50%;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-control, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-control {
+        position: relative;
+        display: block;
+        min-height: 1.5rem;
+        padding-left: 1.5rem;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-input, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input {
+          position: absolute;
+          z-index: -1;
+          opacity: 0;
+          box-sizing: border-box;
+          padding: 0;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label {
+          color: #000000;
+          font-size: 12px!important;
+          font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+          line-height: 22px;
+          margin-bottom: 0;
+          position: relative;
+          vertical-align: top;
+          font-style: normal;
+          font-weight: 700;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-select, #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-select {
+        background-color: #ffffff !important;
+        color: #333333 !important;
+        border-color: #cccccc;
+        border-radius: 4px !important;
+        border-style: solid !important;
+        border-width: 1px !important;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-size: 14px !important;
+        line-height: 20px !important;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 10px 28px 10px 12px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        max-width: 100% !important;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+        background: url('https://assets.mlcdn.com/ml/images/default/dropdown.svg') no-repeat right .75rem center/8px 10px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow {
+        height: auto;
+        width: 100%;
+        float: left;
+      }
+      .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal { width: 70%; float: left; }
+      .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal { width: 30%; float: left; }
+      .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal.labelsOn { padding-top: 25px;  }
+      .ml-form-formContent.horozintalForm .ml-form-horizontalRow .horizontal-fields { box-sizing: border-box; float: left; padding-right: 10px;  }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
+        background-color: #ffffff;
+        color: #333333;
+        border-color: #cccccc;
+        border-radius: 4px;
+        border-style: solid;
+        border-width: 1px;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 10px 10px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow-y: initial;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
+        background-color: #000000 !important;
+        border-color: #000000;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        box-shadow: none;
+        color: #ffffff !important;
+        cursor: pointer;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-size: 14px !important;
+        font-weight: 700;
+        line-height: 20px;
+        margin: 0 !important;
+        padding: 10px !important;
+        width: 100%;
+        height: auto;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
+        background-color: #333333 !important;
+        border-color: #333333 !important;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"] {
+        box-sizing: border-box;
+        padding: 0;
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        margin-top: 5px;
+        margin-left: -1.5rem;
+        overflow: visible;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description {
+        color: #000000;
+        display: block;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        text-align: left;
+        margin-bottom: 0;
+        position: relative;
+        vertical-align: top;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label {
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        display: block;
+        min-height: 24px;
+        padding-left: 24px;
+
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label a {
+        color: #000000;
+        text-decoration: underline;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p {
+        color: #000000 !important;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+        font-size: 12px !important;
+        font-weight: normal !important;
+        line-height: 18px !important;
+        padding: 0 !important;
+        margin: 0 5px 0 0 !important;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p:last-child {
+        margin: 0;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit {
+        margin: 0 0 20px 0;
+        float: left;
+        width: 100%;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
+        background-color: #000000 !important;
+        border: none !important;
+        border-radius: 4px !important;
+        box-shadow: none !important;
+        color: #ffffff !important;
+        cursor: pointer;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 700 !important;
+        line-height: 21px !important;
+        height: auto;
+        padding: 10px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.loading {
+        display: none;
+      }
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
+        background-color: #333333 !important;
+      }
+      .ml-subscribe-close {
+        width: 30px;
+        height: 30px;
+        background: url('https://assets.mlcdn.com/ml/images/default/modal_close.png') no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+        margin-top: -10px;
+        margin-right: -10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .ml-error input, .ml-error textarea, .ml-error select {
+        border-color: red!important;
+      }
+
+      .ml-error .custom-checkbox-radio-list {
+        border: 1px solid red !important;
+        border-radius: 4px;
+        padding: 10px;
+      }
+
+      .ml-error .label-description,
+      .ml-error .label-description p,
+      .ml-error .label-description p a,
+      .ml-error label:first-child {
+        color: #ff0000 !important;
+      }
+
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow.ml-error .label-description p,
+      #mlb2-42735190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow.ml-error .label-description p:first-letter {
+        color: #ff0000 !important;
+      }
+            @media only screen and (max-width: 400px){
+
+        .ml-form-embedWrapper.embedDefault, .ml-form-embedWrapper.embedPopup { width: 100%!important; }
+        .ml-form-formContent.horozintalForm { float: left!important; }
+        .ml-form-formContent.horozintalForm .ml-form-horizontalRow { height: auto!important; width: 100%!important; float: left!important; }
+        .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal { width: 100%!important; }
+        .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal > div { padding-right: 0px!important; padding-bottom: 10px; }
+        .ml-form-formContent.horozintalForm .ml-button-horizontal { width: 100%!important; }
+        .ml-form-formContent.horozintalForm .ml-button-horizontal.labelsOn { padding-top: 0px!important; }
+
+      }
+    </style>
+
+    
+  
+    
+    
+
+    
+    
+
+    
+    
+
+    
+
+      
+        
+        
+      
+
+      
+        
+        
+      
+
+      
+
+            
+            
+            
+            
+            
+            
+      
+
+      
+
+      
+        
+        
+         
+        
+        
+      
+
+        
+        
+        
+        
+        
+        
+      
+
+       
+
+        
+        
+        
+        
+        
+        
+        
+       
+
+
+      
+        
+        
+        
+        
+  
+
+
+
+  
+        
+        
+        
+      
+
+
+      
+    
+    
+    
+    
+    
+    
+    
+  
+
+  
+        
+        
+        
+        
+        
+      
+
+      
+        
+        
+        
+        
+        
+      
+
+      
+        
+        
+        
+        
+        
+      
+
+       
+
+        
+        
+        
+        
+       
+
+       
+        
+        
+        
+        
+      
+
+      
+        
+        
+        
+        
+        
+        
+        
+       
+
+    
+
+    
+
+
+      
+
+
+      
+
+      
+      
+
+      
+
+      
+
+
+
+
+
+    
+
+      
+    <div id="mlb2-42735190" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-42735190">
+      <div class="ml-form-align-center ">
+        <div class="ml-form-embedWrapper embedForm">
+
+          
+          
+
+          <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+
+            <div class="ml-form-embedContent" style="margin-bottom: 0px; ">
+              
+            </div>
+
+            <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/643388/forms/190543486097819505/subscribe" data-code="" method="post" target="_blank">
+              <div class="ml-form-formContent">
+                
+
+                  
+                  <div class="ml-form-fieldRow ">
+                    <div class="ml-field-group ml-field-first_name ml-validate-required">
+
+                      
+
+
+                      <!-- input -->
+                      <input aria-label="first_name" aria-required="true" type="text" class="form-control" data-inputmask="" name="fields[first_name]" placeholder="First name" autocomplete="">
+                      <!-- /input -->
+
+                      <!-- textarea -->
+                      
+                      <!-- /textarea -->
+
+                      <!-- select -->
+                      
+                      <!-- /select -->
+
+                      <!-- checkboxes -->
+            
+            <!-- /checkboxes -->
+
+                      <!-- radio -->
+                      
+                      <!-- /radio -->
+
+                      <!-- countries -->
+                      
+                      <!-- /countries -->
+
+
+
+
+
+                    </div>
+                  </div><div class="ml-form-fieldRow ">
+                    <div class="ml-field-group ml-field-last_name">
+
+                      
+
+
+                      <!-- input -->
+                      <input aria-label="last_name" type="text" class="form-control" data-inputmask="" name="fields[last_name]" placeholder="Last name" autocomplete="family-name">
+                      <!-- /input -->
+
+                      <!-- textarea -->
+                      
+                      <!-- /textarea -->
+
+                      <!-- select -->
+                      
+                      <!-- /select -->
+
+                      <!-- checkboxes -->
+            
+            <!-- /checkboxes -->
+
+                      <!-- radio -->
+                      
+                      <!-- /radio -->
+
+                      <!-- countries -->
+                      
+                      <!-- /countries -->
+
+
+
+
+
+                    </div>
+                  </div><div class="ml-form-fieldRow ">
+                    <div class="ml-field-group ml-field-phone ml-validate-required">
+
+                      
+
+
+                      <!-- input -->
+                      <input aria-label="phone" aria-required="true" type="text" class="form-control" data-inputmask="" name="fields[phone]" placeholder="Phone Number" autocomplete="">
+                      <!-- /input -->
+
+                      <!-- textarea -->
+                      
+                      <!-- /textarea -->
+
+                      <!-- select -->
+                      
+                      <!-- /select -->
+
+                      <!-- checkboxes -->
+            
+            <!-- /checkboxes -->
+
+                      <!-- radio -->
+                      
+                      <!-- /radio -->
+
+                      <!-- countries -->
+                      
+                      <!-- /countries -->
+
+
+
+
+
+                    </div>
+                  </div><div class="ml-form-fieldRow ">
+                    <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+
+                      
+
+
+                      <!-- input -->
+                      <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email Address" autocomplete="email">
+                      <!-- /input -->
+
+                      <!-- textarea -->
+                      
+                      <!-- /textarea -->
+
+                      <!-- select -->
+                      
+                      <!-- /select -->
+
+                      <!-- checkboxes -->
+            
+            <!-- /checkboxes -->
+
+                      <!-- radio -->
+                      
+                      <!-- /radio -->
+
+                      <!-- countries -->
+                      
+                      <!-- /countries -->
+
+
+
+
+
+                    </div>
+                  </div><div class="ml-form-fieldRow ">
+                    <div class="ml-field-group ml-field-address ml-validate-required">
+
+                      
+
+
+                      <!-- input -->
+                      
+                      <!-- /input -->
+
+                      <!-- textarea -->
+                      <textarea class="form-control" name="fields[address]" aria-label="address" aria-required="true" maxlength="1024" placeholder="Address"></textarea>
+                      <!-- /textarea -->
+
+                      <!-- select -->
+                      
+                      <!-- /select -->
+
+                      <!-- checkboxes -->
+            
+            <!-- /checkboxes -->
+
+                      <!-- radio -->
+                      
+                      <!-- /radio -->
+
+                      <!-- countries -->
+                      
+                      <!-- /countries -->
+
+
+
+
+
+                    </div>
+                  </div><div class="ml-form-fieldRow ">
+                    <div class="ml-field-group ml-field-current_school ml-validate-required">
+
+                      
+
+
+                      <!-- input -->
+                      <input aria-label="current_school" aria-required="true" type="text" class="form-control" data-inputmask="" name="fields[current_school]" placeholder="Name of School" autocomplete="">
+                      <!-- /input -->
+
+                      <!-- textarea -->
+                      
+                      <!-- /textarea -->
+
+                      <!-- select -->
+                      
+                      <!-- /select -->
+
+                      <!-- checkboxes -->
+            
+            <!-- /checkboxes -->
+
+                      <!-- radio -->
+                      
+                      <!-- /radio -->
+
+                      <!-- countries -->
+                      
+                      <!-- /countries -->
+
+
+
+
+
+                    </div>
+                  </div><div class="ml-form-fieldRow ">
+                    <div class="ml-field-group ml-field-gender ml-validate-required">
+
+                      
+
+
+                      <!-- input -->
+                      
+                      <!-- /input -->
+
+                      <!-- textarea -->
+                      
+                      <!-- /textarea -->
+
+                      <!-- select -->
+                      
+                      <!-- /select -->
+
+                      <!-- checkboxes -->
+            <div class="custom-checkbox-radio-list">
+              <!-- Visible if current or any next has value -->
+              <div class="custom-control custom-checkbox">
+                <input name="fields[gender][]" aria-label="gender" aria-required="true" class="custom-control-input" type="checkbox" value="Male" id="checkbox-42735190-63-0">
+                <label class="custom-control-label" for="checkbox-42735190-63-0">
+                  Male
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox">
+                <input name="fields[gender][]" aria-label="gender" aria-required="true" class="custom-control-input" type="checkbox" value="Female" id="checkbox-42735190-63-1">
+                <label class="custom-control-label" for="checkbox-42735190-63-1">
+                  Female
+                </label>
+              </div>
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+            </div>
+            <!-- /checkboxes -->
+
+                      <!-- radio -->
+                      
+                      <!-- /radio -->
+
+                      <!-- countries -->
+                      
+                      <!-- /countries -->
+
+
+
+
+
+                    </div>
+                  </div><div class="ml-form-fieldRow ">
+                    <div class="ml-field-group ml-field-z_i_p ml-validate-required">
+
+                      
+
+
+                      <!-- input -->
+                      <input aria-label="z_i_p" aria-required="true" type="text" class="form-control" data-inputmask="" name="fields[z_i_p]" placeholder="Age" autocomplete="">
+                      <!-- /input -->
+
+                      <!-- textarea -->
+                      
+                      <!-- /textarea -->
+
+                      <!-- select -->
+                      
+                      <!-- /select -->
+
+                      <!-- checkboxes -->
+            
+            <!-- /checkboxes -->
+
+                      <!-- radio -->
+                      
+                      <!-- /radio -->
+
+                      <!-- countries -->
+                      
+                      <!-- /countries -->
+
+
+
+
+
+                    </div>
+                  </div><div class="ml-form-fieldRow ">
+                    <div class="ml-field-group ml-field-emergency_contact_phone_number ml-validate-required">
+
+                      
+
+
+                      <!-- input -->
+                      <input aria-label="emergency_contact_phone_number" aria-required="true" type="text" class="form-control" data-inputmask="" name="fields[emergency_contact_phone_number]" placeholder="Emergency Contact Phone Number" autocomplete="">
+                      <!-- /input -->
+
+                      <!-- textarea -->
+                      
+                      <!-- /textarea -->
+
+                      <!-- select -->
+                      
+                      <!-- /select -->
+
+                      <!-- checkboxes -->
+            
+            <!-- /checkboxes -->
+
+                      <!-- radio -->
+                      
+                      <!-- /radio -->
+
+                      <!-- countries -->
+                      
+                      <!-- /countries -->
+
+
+
+
+
+                    </div>
+                  </div><div class="ml-form-fieldRow ">
+                    <div class="ml-field-group ml-field-declaration">
+
+                      
+
+
+                      <!-- input -->
+                      
+                      <!-- /input -->
+
+                      <!-- textarea -->
+                      
+                      <!-- /textarea -->
+
+                      <!-- select -->
+                      
+                      <!-- /select -->
+
+                      <!-- checkboxes -->
+            <div class="custom-checkbox-radio-list">
+              <!-- Visible if current or any next has value -->
+              <div class="custom-control custom-checkbox">
+                <input name="fields[declaration][]" aria-label="declaration" class="custom-control-input" type="checkbox" value="If you are below 18, confirm you have parental consent" id="checkbox-42735190-93-0">
+                <label class="custom-control-label" for="checkbox-42735190-93-0">
+                  If you are below 18, confirm you have parental consent
+                </label>
+              </div>
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+            </div>
+            <!-- /checkboxes -->
+
+                      <!-- radio -->
+                      
+                      <!-- /radio -->
+
+                      <!-- countries -->
+                      
+                      <!-- /countries -->
+
+
+
+
+
+                    </div>
+                  </div><div class="ml-form-fieldRow ">
+                    <div class="ml-field-group ml-field-job_title ml-validate-required">
+
+                      
+
+
+                      <!-- input -->
+                      <input aria-label="job_title" aria-required="true" type="text" class="form-control" data-inputmask="" name="fields[job_title]" placeholder="How did you hear about CAS Bootcamp (Select one option below)?" autocomplete="">
+                      <!-- /input -->
+
+                      <!-- textarea -->
+                      
+                      <!-- /textarea -->
+
+                      <!-- select -->
+                      
+                      <!-- /select -->
+
+                      <!-- checkboxes -->
+            
+            <!-- /checkboxes -->
+
+                      <!-- radio -->
+                      
+                      <!-- /radio -->
+
+                      <!-- countries -->
+                      
+                      <!-- /countries -->
+
+
+
+
+
+                    </div>
+                  </div><div class="ml-form-fieldRow ml-last-item">
+                    <div class="ml-field-group ml-field-professional_area ml-validate-required">
+
+                      
+
+
+                      <!-- input -->
+                      
+                      <!-- /input -->
+
+                      <!-- textarea -->
+                      
+                      <!-- /textarea -->
+
+                      <!-- select -->
+                      
+                      <!-- /select -->
+
+                      <!-- checkboxes -->
+            
+            <!-- /checkboxes -->
+
+                      <!-- radio -->
+                      <div class="custom-checkbox-radio-list">
+                        <!-- Visible if current or any next has value -->
+                        <div class="custom-control custom-radio">
+                          <input aria-label="professional_area" aria-required="true" name="fields[professional_area]" class="custom-control-input" type="radio" value="Instagram" id="radio-42735190-113}-0">
+                          <label class="custom-control-label" for="radio-42735190-113}-0">
+                            Instagram
+                          </label>
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                          <input aria-label="professional_area" aria-required="true" name="fields[professional_area]" class="custom-control-input" type="radio" value="Website" id="radio-42735190-113}-1">
+                          <label class="custom-control-label" for="radio-42735190-113}-1">
+                            Website
+                          </label>
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                          <input aria-label="professional_area" aria-required="true" name="fields[professional_area]" class="custom-control-input" type="radio" value="WhatsApp" id="radio-42735190-113}-2">
+                          <label class="custom-control-label" for="radio-42735190-113}-2">
+                            WhatsApp
+                          </label>
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                          <input aria-label="professional_area" aria-required="true" name="fields[professional_area]" class="custom-control-input" type="radio" value="Previous attendee" id="radio-42735190-113}-3">
+                          <label class="custom-control-label" for="radio-42735190-113}-3">
+                            Previous attendee
+                          </label>
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                          <input aria-label="professional_area" aria-required="true" name="fields[professional_area]" class="custom-control-input" type="radio" value="Twitter (X)" id="radio-42735190-113}-4">
+                          <label class="custom-control-label" for="radio-42735190-113}-4">
+                            Twitter (X)
+                          </label>
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                          <input aria-label="professional_area" aria-required="true" name="fields[professional_area]" class="custom-control-input" type="radio" value="Linkedin" id="radio-42735190-113}-5">
+                          <label class="custom-control-label" for="radio-42735190-113}-5">
+                            Linkedin
+                          </label>
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                          <input aria-label="professional_area" aria-required="true" name="fields[professional_area]" class="custom-control-input" type="radio" value="Family/Friend" id="radio-42735190-113}-6">
+                          <label class="custom-control-label" for="radio-42735190-113}-6">
+                            Family/Friend
+                          </label>
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                          <input aria-label="professional_area" aria-required="true" name="fields[professional_area]" class="custom-control-input" type="radio" value="Facebook" id="radio-42735190-113}-7">
+                          <label class="custom-control-label" for="radio-42735190-113}-7">
+                            Facebook
+                          </label>
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                          <input aria-label="professional_area" aria-required="true" name="fields[professional_area]" class="custom-control-input" type="radio" value="Email" id="radio-42735190-113}-8">
+                          <label class="custom-control-label" for="radio-42735190-113}-8">
+                            Email
+                          </label>
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                          <input aria-label="professional_area" aria-required="true" name="fields[professional_area]" class="custom-control-input" type="radio" value="LCA Volunteer/member" id="radio-42735190-113}-9">
+                          <label class="custom-control-label" for="radio-42735190-113}-9">
+                            LCA Volunteer/member
+                          </label>
+                        </div>
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+                      </div>
+                      <!-- /radio -->
+
+                      <!-- countries -->
+                      
+                      <!-- /countries -->
+
+
+
+
+
+                    </div>
+                  </div>
+                
+              </div>
+
+              
+
+              <!-- Privacy policy -->
+              
+              <!-- /Privacy policy -->
+
+              
+
+              
+
+              <div class="ml-form-checkboxRow ml-validate-required">
+                
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <div class="label-description">
+                      <p>By submitting this application, I consent to the collection, storage, and use of my personal data and information provided. I also consent to the use of my picture (during the program) in advocacy and publicity materials. I understand that the information provided will be handled with confidentiality and used solely for related administrative purposes. I acknowledge that I have the right to request access to, correction of, or deletion of my personal data in accordance with applicable data protection laws. I also agree to indemnify and hold harmless LCA, its officers, trustees, directors, employees, and agents from and against any claims, liabilities, damages, losses, or expenses arising out of or related to my registration and participation in this program.</p>
+                    </div>
+                  </label>
+                
+              </div>
+
+
+
+
+
+
+              
+              <input type="hidden" name="ml-submit" value="1">
+
+              <div class="ml-form-embedSubmit">
+                
+                  <button type="submit" class="primary">Submit</button>
+                
+                <button disabled="disabled" style="display: none;" type="button" class="loading">
+                  <div class="ml-form-embedSubmitLoad"></div>
+                  <span class="sr-only">Loading...</span>
+                </button>
+              </div>
+
+              
+              <input type="hidden" name="anticsrf" value="true">
+            </form>
+          </div>
+
+          <div class="ml-form-successBody row-success" style="display: none">
+
+            <div class="ml-form-successContent">
+              
+                <h4>Thank you!</h4>
+                <p>You have successfully registered for CAS Bootcamp 2026. Check your email for details. See you in August!</p>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+
+  
+  
+  <script>
+    function ml_webform_success_42735190() {
+      var $ = ml_jQuery || jQuery;
+      $('.ml-subscribe-form-42735190 .row-success').show();
+      $('.ml-subscribe-form-42735190 .row-form').hide();
+    }
+      </script>
+  
+  
+      <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
+        <script>
+            fetch("https://assets.mailerlite.com/jsonp/643388/forms/190543486097819505/takel")
+        </script>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <img class="footer-logo" src="data:image/png;base64,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" alt="Liberty Career Academy logo">
+    <p>Discover, Engage, Evolve.</p>
+    <div class="footer-links">
+      <a href="https://lcaglobal.org" target="_blank" rel="noopener">Website</a>
+      <a href="https://lcaglobal.org/casbootcamp/" target="_blank" rel="noopener">CAS Bootcamp</a>
+      <a href="#registration-form">Register</a>
+      <a href="https://www.instagram.com/lcanigeria/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.youtube.com/watch?v=IkFGPhS7ta4&list=PLxTS7zheCF0DlO070PtXgU4CNH4DLcILf" target="_blank" rel="noopener">YouTube</a>
+    </div>
+    <p class="footer-copy">© 2026 Liberty Career Academy. Career &amp; Stewardship Bootcamp, 10th Edition.</p>
+  </div>
+</footer>
+
+<script>
+  function updateCountdown() {
+    var target = new Date('2026-08-12T08:30:00+01:00');
+    var now = new Date();
+    var diff = target - now;
+    if (diff < 0) diff = 0;
+    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    var secs = Math.floor((diff % (1000 * 60)) / 1000);
+    var dEl = document.getElementById('cd-days');
+    var hEl = document.getElementById('cd-hours');
+    var mEl = document.getElementById('cd-mins');
+    var sEl = document.getElementById('cd-secs');
+    if (dEl) dEl.textContent = String(days).padStart(2, '0');
+    if (hEl) hEl.textContent = String(hours).padStart(2, '0');
+    if (mEl) mEl.textContent = String(mins).padStart(2, '0');
+    if (sEl) sEl.textContent = String(secs).padStart(2, '0');
+  }
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
+</body>
+</html>
