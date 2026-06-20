@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Career &amp; Stewardship Bootcamp 2026 | Liberty Career Academy</title>
-<meta name="description" content="Career and Stewardship Bootcamp 2026 by Liberty Career Academy. A free, energetic two-day experience for young people ages 13 to 21.">
+<meta name="description" content="Career and Stewardship Bootcamp 2026 by Liberty Career Academy. A free, energetic two-day experience for young people ages 14 to 22.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Titillium+Web:wght@600;700;900&display=swap" rel="stylesheet">
@@ -810,6 +810,76 @@
     text-transform: uppercase;
   }
 
+
+  /* MULTI-COLOUR SPEAKER CARDS */
+  .speaker-card {
+    --speaker-a: var(--liberty-blue);
+    --speaker-b: var(--liberty-red);
+    --speaker-c: var(--liberty-yellow);
+    --speaker-text: var(--white);
+  }
+
+  .speaker-card:nth-child(1) { --speaker-a: #1F2C50; --speaker-b: #E51F2D; --speaker-c: #EFC815; --speaker-text: #FFFFFF; }
+  .speaker-card:nth-child(2) { --speaker-a: #E51F2D; --speaker-b: #F9B13C; --speaker-c: #FFFFFF; --speaker-text: #FFFFFF; }
+  .speaker-card:nth-child(3) { --speaker-a: #69B0E2; --speaker-b: #1F2C50; --speaker-c: #EFC815; --speaker-text: #FFFFFF; }
+  .speaker-card:nth-child(4) { --speaker-a: #F9B13C; --speaker-b: #EFC815; --speaker-c: #1F2C50; --speaker-text: #1F2C50; }
+  .speaker-card:nth-child(5) { --speaker-a: #EFC815; --speaker-b: #69B0E2; --speaker-c: #E51F2D; --speaker-text: #1F2C50; }
+  .speaker-card:nth-child(6) { --speaker-a: #575756; --speaker-b: #1F2C50; --speaker-c: #F9B13C; --speaker-text: #FFFFFF; }
+  .speaker-card:nth-child(7) { --speaker-a: #111A35; --speaker-b: #69B0E2; --speaker-c: #E51F2D; --speaker-text: #FFFFFF; }
+  .speaker-card:nth-child(8) { --speaker-a: #FFFFFF; --speaker-b: #EAF6FF; --speaker-c: #E51F2D; --speaker-text: #1F2C50; }
+  .speaker-card:nth-child(9) { --speaker-a: #1F2C50; --speaker-b: #EFC815; --speaker-c: #69B0E2; --speaker-text: #FFFFFF; }
+  .speaker-card:nth-child(10) { --speaker-a: #E51F2D; --speaker-b: #1F2C50; --speaker-c: #F9B13C; --speaker-text: #FFFFFF; }
+
+  .speaker-front {
+    background:
+      radial-gradient(circle at 16% 14%, rgba(255,255,255,0.32), transparent 28%),
+      linear-gradient(135deg, var(--speaker-a) 0%, var(--speaker-b) 62%, var(--speaker-c) 100%);
+  }
+
+  .speaker-front::after {
+    height: 64%;
+    background:
+      linear-gradient(180deg, transparent 0%, rgba(17, 26, 53, 0.58) 42%, rgba(17, 26, 53, 0.96) 100%),
+      linear-gradient(135deg, color-mix(in srgb, var(--speaker-a) 36%, transparent), color-mix(in srgb, var(--speaker-b) 28%, transparent));
+  }
+
+  .speaker-front::before {
+    background: var(--speaker-c);
+    box-shadow: 0 10px 26px color-mix(in srgb, var(--speaker-c) 38%, transparent);
+  }
+
+  .speaker-card:nth-child(4) .speaker-meta,
+  .speaker-card:nth-child(5) .speaker-meta,
+  .speaker-card:nth-child(8) .speaker-meta {
+    color: var(--white);
+  }
+
+  .speaker-back {
+    background:
+      radial-gradient(circle at 14% 12%, rgba(255,255,255,0.18), transparent 28%),
+      linear-gradient(135deg, var(--speaker-a) 0%, var(--speaker-b) 58%, var(--speaker-c) 120%);
+  }
+
+  .speaker-back::before {
+    background: var(--speaker-c);
+    opacity: 0.32;
+  }
+
+  .speaker-bio-label {
+    color: var(--speaker-c);
+  }
+
+  .speaker-topic {
+    background: rgba(255,255,255,0.92);
+    color: var(--liberty-blue);
+  }
+
+  .speaker-card:nth-child(4) .speaker-bio-label,
+  .speaker-card:nth-child(5) .speaker-bio-label,
+  .speaker-card:nth-child(8) .speaker-bio-label {
+    color: var(--liberty-blue);
+  }
+
   /* GALLERY */
   .gallery { background: var(--ice); }
   .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 230px; gap: 0.9rem; margin-top: 2.6rem; }
@@ -1099,7 +1169,7 @@
     <div class="hero-copy">
       <div class="badge-row">
         <span class="badge hot">10th Edition</span>
-        <span class="badge">Ages 13 to 21</span>
+        <span class="badge">Ages 14 to 22</span>
         <span class="badge">Free Entry</span>
       </div>
       <h1>Career &amp;<span>Stewardship</span>Bootcamp</h1>
@@ -1356,12 +1426,12 @@ Come ready for career clarity, values-based mentoring, peer connection, and prac
 <section class="section for">
   <div class="container">
     <p class="eyebrow">Who Should Attend</p>
-    <h2 class="section-title">Built for ages 13 to 21.</h2>
+    <h2 class="section-title">Built for ages 14 to 22.</h2>
     <p class="section-copy">Whether you are in secondary school, preparing for university, already a university student, learning a skill, starting a business idea, or trying to make sense of your future, this room is for you.</p>
     <div class="for-grid">
-      <div class="for-card"><strong>13-15</strong><span>Students beginning to ask big questions about strengths, choices, and future possibilities.</span></div>
-      <div class="for-card"><strong>16-18</strong><span>Teenagers preparing for major academic, career, skill, and identity decisions.</span></div>
-      <div class="for-card"><strong>19-21</strong><span>Young adults ready to gain direction, confidence, money wisdom, and practical momentum.</span></div>
+      <div class="for-card"><strong>14-16</strong><span>Students beginning to ask big questions about strengths, choices, and future possibilities.</span></div>
+      <div class="for-card"><strong>17-19</strong><span>Teenagers preparing for major academic, career, skill, and identity decisions.</span></div>
+      <div class="for-card"><strong>20-22</strong><span>Young adults ready to gain direction, confidence, money wisdom, and practical momentum.</span></div>
     </div>
   </div>
 </section>
