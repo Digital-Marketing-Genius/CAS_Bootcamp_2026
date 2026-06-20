@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Career &amp; Stewardship Bootcamp 2026 | Liberty Career Academy</title>
-<meta name="description" content="Career and Stewardship Bootcamp 2026 by Liberty Career Academy. A free, energetic two-day experience for young people ages 4 to 22.">
+<meta name="description" content="Career and Stewardship Bootcamp 2026 by Liberty Career Academy. A free, energetic two-day experience for young people ages 13 to 21.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Titillium+Web:wght@600;700;900&display=swap" rel="stylesheet">
@@ -377,25 +377,193 @@
   .cd-lbl { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
 
   /* ABOUT */
-  .about { background: var(--white); }
-  .about-grid { display: grid; grid-template-columns: 0.92fr 1.08fr; gap: 3rem; align-items: center; }
+  .about {
+    background:
+      radial-gradient(circle at 12% 18%, rgba(105, 176, 226, 0.22), transparent 27%),
+      radial-gradient(circle at 92% 12%, rgba(239, 200, 21, 0.20), transparent 25%),
+      linear-gradient(180deg, #FFFFFF 0%, #F6F8FC 100%);
+    overflow: hidden;
+  }
+
+  .about::before {
+    content: '';
+    position: absolute;
+    left: -120px;
+    top: 80px;
+    width: 320px;
+    height: 320px;
+    background-image:
+      linear-gradient(135deg, var(--liberty-blue) 25%, transparent 25%),
+      linear-gradient(135deg, var(--liberty-red) 25%, transparent 25%);
+    background-size: 46px 46px;
+    background-position: 0 0, 23px 23px;
+    opacity: 0.055;
+    transform: rotate(10deg);
+    pointer-events: none;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .about-visual {
+    position: relative;
+    min-height: 560px;
+  }
+
+  .about-visual::before {
+    content: '';
+    position: absolute;
+    left: -18px;
+    top: 34px;
+    width: 72%;
+    height: 72%;
+    border-radius: 34px;
+    background: var(--liberty-yellow);
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 78% 100%, 0 100%);
+    opacity: 0.9;
+  }
+
+  .about-visual::after {
+    content: '';
+    position: absolute;
+    right: -12px;
+    bottom: 36px;
+    width: 190px;
+    height: 190px;
+    background: var(--liberty-red);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 100%, 0 52%);
+    opacity: 0.95;
+    z-index: 1;
+  }
 
   .shape-photo {
     position: relative;
-    min-height: 520px;
-    border-radius: 28px;
+    z-index: 2;
+    min-height: 540px;
+    border-radius: 34px;
     overflow: hidden;
     background: var(--liberty-blue);
     clip-path: polygon(0 0, 100% 0, 100% 78%, 78% 100%, 0 100%);
     box-shadow: var(--shadow);
   }
 
-  .shape-photo img { width: 100%; height: 100%; min-height: 520px; object-fit: cover; opacity: 0.88; }
+  .shape-photo img {
+    width: 100%;
+    height: 100%;
+    min-height: 540px;
+    object-fit: cover;
+    opacity: 0.9;
+    filter: saturate(1.08) contrast(1.04);
+  }
 
-  .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; margin-top: 2rem; }
-  .stat { background: var(--ice); border-radius: 22px; padding: 1rem; border: 1px solid rgba(105,176,226,0.35); }
-  .stat strong { display: block; font-family: 'Titillium Web', sans-serif; font-size: 2.45rem; line-height: 0.9; color: var(--liberty-red); }
-  .stat span { display: block; margin-top: 0.45rem; font-size: 0.76rem; font-weight: 800; color: var(--liberty-blue); text-transform: uppercase; letter-spacing: 0.08em; }
+  .shape-photo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(31, 44, 80, 0.05), rgba(17, 26, 53, 0.62)),
+      linear-gradient(135deg, rgba(229,31,45,0.22), transparent 42%);
+  }
+
+  .about-floating-badge {
+    position: absolute;
+    z-index: 4;
+    left: 24px;
+    bottom: 34px;
+    max-width: 250px;
+    border-radius: 26px;
+    padding: 1.1rem;
+    background: rgba(255,255,255,0.94);
+    border: 1px solid rgba(31,44,80,0.08);
+    box-shadow: 0 20px 48px rgba(31,44,80,0.18);
+  }
+
+  .about-floating-badge strong {
+    display: block;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2.65rem;
+    line-height: 0.9;
+    color: var(--liberty-red);
+  }
+
+  .about-floating-badge span {
+    display: block;
+    margin-top: 0.35rem;
+    color: var(--liberty-blue);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .about-content {
+    position: relative;
+    padding: clamp(1.4rem, 3vw, 2.35rem);
+    border-radius: 34px;
+    background: rgba(255,255,255,0.86);
+    border: 1px solid rgba(31,44,80,0.08);
+    box-shadow: 0 18px 60px rgba(31,44,80,0.10);
+    backdrop-filter: blur(12px);
+  }
+
+  .about-content::before {
+    content: '';
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    width: 72px;
+    height: 72px;
+    background: var(--powder-blue);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 100%, 0 52%);
+    opacity: 0.22;
+  }
+
+  .about .section-copy {
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.85rem;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .stat {
+    background: linear-gradient(180deg, #FFFFFF 0%, var(--ice) 100%);
+    border-radius: 24px;
+    padding: 1.05rem;
+    border: 1px solid rgba(105,176,226,0.35);
+    box-shadow: 0 12px 30px rgba(31,44,80,0.08);
+  }
+
+  .stat strong {
+    display: block;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2.45rem;
+    line-height: 0.9;
+    color: var(--liberty-red);
+  }
+
+  .stat span {
+    display: block;
+    margin-top: 0.45rem;
+    font-size: 0.76rem;
+    font-weight: 800;
+    color: var(--liberty-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
 
   /* VIDEO */
   .video { background: var(--liberty-blue); color: var(--white); overflow: hidden; }
@@ -489,15 +657,15 @@
 
   .speaker-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.35rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.15rem;
     position: relative;
     z-index: 1;
   }
 
   .speaker-card {
     position: relative;
-    min-height: 390px;
+    min-height: 360px;
     perspective: 1200px;
     outline: none;
   }
@@ -506,7 +674,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    min-height: 390px;
+    min-height: 360px;
     transform-style: preserve-3d;
     transition: transform 0.72s cubic-bezier(.2,.75,.22,1);
   }
@@ -867,6 +1035,10 @@
     font-weight: 900 !important;
     text-align: center !important;
   }
+  @media (max-width: 1120px) {
+    .speaker-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
   @media (max-width: 940px) {
     .nav-links a:not(.nav-cta) { display: none; }
     .hero-grid, .about-grid, .register-grid { grid-template-columns: 1fr; }
@@ -927,7 +1099,7 @@
     <div class="hero-copy">
       <div class="badge-row">
         <span class="badge hot">10th Edition</span>
-        <span class="badge">Ages 14 to 22</span>
+        <span class="badge">Ages 13 to 21</span>
         <span class="badge">Free Entry</span>
       </div>
       <h1>Career &amp;<span>Stewardship</span>Bootcamp</h1>
@@ -974,10 +1146,16 @@
 
 <section class="section about" id="about">
   <div class="container about-grid">
-    <div class="shape-photo">
-      <img src="https://drive.google.com/thumbnail?id=1paO_r0KvOgWnk5h2V0pTdrA2JEpspUkY&sz=w1200" alt="CAS Bootcamp participants">
+    <div class="about-visual">
+      <div class="shape-photo">
+        <img src="https://drive.google.com/thumbnail?id=1paO_r0KvOgWnk5h2V0pTdrA2JEpspUkY&sz=w1200" alt="CAS Bootcamp participants">
+      </div>
+      <div class="about-floating-badge">
+        <strong>10TH</strong>
+        <span>A decade of equipping young people</span>
+      </div>
     </div>
-    <div>
+    <div class="about-content">
       <p class="eyebrow">About the Bootcamp</p>
       <h2 class="section-title">Not just a workshop. A launchpad.</h2>
       <p class="section-copy">CAS Boot Camp is an intensive, two-day, non-residential program designed to empower and equip young people between the ages of 14-22 with the knowledge and tools required for life and their future careers.<br><br> 
@@ -1001,7 +1179,7 @@ Come ready for career clarity, values-based mentoring, peer connection, and prac
 <section class="section video" id="highlights">
   <div class="container">
     <p class="eyebrow">2025 Highlights</p>
-    <h2 class="section-title">Feel the energy from last year</h2>
+    <h2 class="section-title">See the energy from last year.</h2>
     <p class="section-copy">Watch the moments, the conversations, and the atmosphere that made the last edition memorable.</p>
     <div class="video-wrap">
       <iframe src="https://www.youtube.com/embed/IkFGPhS7ta4" title="CAS Bootcamp 2025 Highlights" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -1031,8 +1209,8 @@ Come ready for career clarity, values-based mentoring, peer connection, and prac
     <div class="speakers-head">
       <div>
         <p class="eyebrow">Meet the Speakers</p>
-        <h2 class="section-title">Eight voices. One goal.</h2>
-        <p class="section-copy">A vibrant lineup of mentors, founders, professionals, and leaders ready to help young people think clearly, dream boldly, and take practical next steps.</p>
+        <h2 class="section-title">Ten guest speakers. One goal.</h2>
+        <p class="section-copy">A vibrant lineup of 10 mentors, founders, professionals, and leaders ready to help young people think clearly, dream boldly, and take practical next steps.</p>
       </div>
       <div class="speakers-note">Hover or tap each card to reveal the speaker bio. Replace the placeholder names, photos, and bios once the final speaker list is confirmed.</div>
     </div>
@@ -1133,6 +1311,30 @@ Come ready for career clarity, values-based mentoring, peer connection, and prac
           </div>
         </div>
       </article>
+      <article class="speaker-card" tabindex="0">
+        <div class="speaker-card-inner">
+          <div class="speaker-face speaker-front">
+            <img src="https://placehold.co/700x900/1F2C50/EFC815?text=Speaker+9" alt="Speaker 9 portrait">
+            <div class="speaker-meta"><h3>Speaker Name 9</h3><p>Creatives</p></div>
+          </div>
+          <div class="speaker-face speaker-back">
+            <div><span class="speaker-bio-label">Bio</span><h3>Speaker Name 9</h3><p>A creative professional helping young people understand how ideas, storytelling, design, and disciplined expression can become meaningful career pathways.</p></div>
+            <span class="speaker-topic">Create with Purpose</span>
+          </div>
+        </div>
+      </article>
+      <article class="speaker-card" tabindex="0">
+        <div class="speaker-card-inner">
+          <div class="speaker-face speaker-front">
+            <img src="https://placehold.co/700x900/E51F2D/EFC815?text=Speaker+10" alt="Speaker 10 portrait">
+            <div class="speaker-meta"><h3>Speaker Name 10</h3><p>Business</p></div>
+          </div>
+          <div class="speaker-face speaker-back">
+            <div><span class="speaker-bio-label">Bio</span><h3>Speaker Name 10</h3><p>A business leader showing participants how to think like problem-solvers, build value, serve people well, and take bold but thoughtful action.</p></div>
+            <span class="speaker-topic">Build Value</span>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -1154,12 +1356,12 @@ Come ready for career clarity, values-based mentoring, peer connection, and prac
 <section class="section for">
   <div class="container">
     <p class="eyebrow">Who Should Attend</p>
-    <h2 class="section-title">Built for ages 14 to 22.</h2>
-    <p class="section-copy">Whether you are in secondary school, preparing for university, learning a skill, starting a business idea, or trying to make sense of your future, this room is for you.</p>
+    <h2 class="section-title">Built for ages 13 to 21.</h2>
+    <p class="section-copy">Whether you are in secondary school, preparing for university, already a university student, learning a skill, starting a business idea, or trying to make sense of your future, this room is for you.</p>
     <div class="for-grid">
-      <div class="for-card"><strong>14-16</strong><span>Students beginning to ask big questions about strengths, choices, and future possibilities.</span></div>
-      <div class="for-card"><strong>17-19</strong><span>Teenagers preparing for major academic, career, skill, and identity decisions.</span></div>
-      <div class="for-card"><strong>20-22</strong><span>Young adults ready to gain direction, confidence, money wisdom, and practical momentum.</span></div>
+      <div class="for-card"><strong>13-15</strong><span>Students beginning to ask big questions about strengths, choices, and future possibilities.</span></div>
+      <div class="for-card"><strong>16-18</strong><span>Teenagers preparing for major academic, career, skill, and identity decisions.</span></div>
+      <div class="for-card"><strong>19-21</strong><span>Young adults ready to gain direction, confidence, money wisdom, and practical momentum.</span></div>
     </div>
   </div>
 </section>
@@ -1175,7 +1377,7 @@ Come ready for career clarity, values-based mentoring, peer connection, and prac
       <div class="free">Free</div>
       <ul class="includes">
         <li>Two full days of training and workshops</li>
-        <li>Career, stewardship, and money sessions</li>
+        <li>Career and stewardship sessions</li>
         <li>Mentor insights and practical guidance</li>
         <li>Peer networking and community</li>
         <li>Certificate of participation</li>
