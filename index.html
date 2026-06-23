@@ -1025,22 +1025,9 @@
     background: var(--liberty-yellow);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 100%, 0 52%);
   }
-  .registration-card {
-    text-align: center;
-  }
-  .registration-card .section-copy {
-    margin: 0 auto 1.6rem;
-  }
-  .registration-card .btn {
-    border: 0;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-  }
-  .registration-note {
-    margin-top: 1rem;
-    color: var(--muted);
-    font-size: 0.9rem;
-    line-height: 1.6;
+  .registration-card .ml-embedded {
+    position: relative;
+    z-index: 2;
   }
   @media (max-width: 1120px) {
     .speaker-grid { grid-template-columns: repeat(3, 1fr); }
@@ -1094,7 +1081,7 @@
       <li><a href="#highlights">Highlights</a></li>
       <li><a href="#speakers">Speakers</a></li>
       <li><a href="#gallery">Gallery</a></li>
-      <li><a href="javascript:void(0)" class="nav-cta ml-onclick-form" onclick="ml('show', 'CjuOmY', true)">Register Free</a></li>
+      <li><a href="#registration-form" class="nav-cta">Register Free</a></li>
     </ul>
   </div>
 </nav>
@@ -1110,7 +1097,7 @@
       <h1>Career &amp;<span>Stewardship</span>Bootcamp</h1>
       <p class="hero-lead">A high-energy two-day experience for young people ready to discover their strengths, build career confidence, learn money wisdom, and connect with mentors who believe in their future.</p>
       <div class="hero-actions">
-        <a href="javascript:void(0)" class="btn btn-primary ml-onclick-form" onclick="ml('show', 'CjuOmY', true)">Register for Free →</a>
+        <a href="#registration-form" class="btn btn-primary">Register for Free →</a>
         <a href="#highlights" class="btn btn-secondary">Watch 2025 Highlights</a>
       </div>
       <div class="quick-info">
@@ -1387,7 +1374,7 @@ Come ready for career clarity, values-based mentoring, peer connection, and prac
         <li>Peer networking and community</li>
         <li>Certificate of participation</li>
       </ul>
-      <a href="javascript:void(0)" class="btn btn-primary ml-onclick-form" style="width:100%;" onclick="ml('show', 'CjuOmY', true)">Register Now →</a>
+      <a href="#registration-form" class="btn btn-primary" style="width:100%;">Register Now →</a>
     </div>
   </div>
 </section>
@@ -1410,9 +1397,7 @@ Come ready for career clarity, values-based mentoring, peer connection, and prac
     </div>
 
     <div class="registration-card">
-      <p class="section-copy">Use the button below to open the updated registration form and complete your application.</p>
-      <button class="btn btn-primary ml-onclick-form" type="button" onclick="ml('show', 'CjuOmY', true)">Register Now</button>
-      <p class="registration-note">The form opens in a secure pop-up window powered by MailerLite.</p>
+      <div class="ml-embedded" data-form="CjuOmY"></div>
     </div>
   </div>
 </section>
@@ -1424,7 +1409,7 @@ Come ready for career clarity, values-based mentoring, peer connection, and prac
     <div class="footer-links">
       <a href="https://lcaglobal.org" target="_blank" rel="noopener">Website</a>
       <a href="https://lcaglobal.org/casbootcamp/" target="_blank" rel="noopener">CAS Bootcamp</a>
-      <a href="javascript:void(0)" class="ml-onclick-form" onclick="ml('show', 'CjuOmY', true)">Register</a>
+      <a href="#registration-form">Register</a>
       <a href="https://www.instagram.com/lcanigeria/" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.youtube.com/watch?v=IkFGPhS7ta4&list=PLxTS7zheCF0DlO070PtXgU4CNH4DLcILf" target="_blank" rel="noopener">YouTube</a>
     </div>
