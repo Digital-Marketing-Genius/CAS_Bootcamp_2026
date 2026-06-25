@@ -305,31 +305,24 @@
     min-height: 530px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     color: var(--white);
   }
 
-  .floating-logo {
-    width: 220px;
-    background: rgba(255,255,255,0.92);
-    border-radius: 24px;
-    padding: 0.95rem;
-    box-shadow: 0 20px 44px rgba(0,0,0,0.18);
-  }
-
   .hero-poster {
-    align-self: flex-end;
-    max-width: 315px;
-    padding: 1.15rem;
+    width: min(100%, 390px);
+    padding: clamp(1.35rem, 4vw, 2.2rem);
     border-radius: 28px;
     background: rgba(17, 26, 53, 0.88);
     border: 1px solid rgba(255,255,255,0.15);
     backdrop-filter: blur(10px);
+    text-align: center;
   }
 
   .poster-kicker { font-size: 0.72rem; font-weight: 900; letter-spacing: 0.14em; text-transform: uppercase; color: var(--powder-blue); }
-  .poster-title { font-family: 'Titillium Web', sans-serif; font-size: 2.4rem; line-height: 0.9; margin: 0.3rem 0 0.6rem; }
-  .poster-copy { font-size: 0.9rem; line-height: 1.55; color: rgba(255,255,255,0.76); }
+  .poster-title { font-family: 'Titillium Web', sans-serif; font-size: clamp(2.4rem, 5vw, 3.45rem); line-height: 0.9; margin: 0.45rem 0 0.8rem; }
+  .poster-copy { font-size: 0.96rem; line-height: 1.65; color: rgba(255,255,255,0.82); }
 
   /* RIBBON */
   .ribbon {
@@ -411,95 +404,96 @@
     z-index: 1;
   }
 
-  .about-visual {
+  .testimonial-marquee {
     position: relative;
+    height: clamp(620px, 72vw, 780px);
     min-height: 560px;
-  }
-
-  .about-visual::before {
-    content: '';
-    position: absolute;
-    left: -18px;
-    top: 34px;
-    width: 72%;
-    height: 72%;
-    border-radius: 34px;
-    background: var(--liberty-yellow);
-    clip-path: polygon(0 0, 100% 0, 100% 78%, 78% 100%, 0 100%);
-    opacity: 0.9;
-  }
-
-  .about-visual::after {
-    content: '';
-    position: absolute;
-    right: -12px;
-    bottom: 36px;
-    width: 190px;
-    height: 190px;
-    background: var(--liberty-red);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 100%, 0 52%);
-    opacity: 0.95;
-    z-index: 1;
-  }
-
-  .shape-photo {
-    position: relative;
-    z-index: 2;
-    min-height: 540px;
     border-radius: 34px;
     overflow: hidden;
-    background: var(--liberty-blue);
-    clip-path: polygon(0 0, 100% 0, 100% 78%, 78% 100%, 0 100%);
+    background:
+      linear-gradient(160deg, rgba(31, 44, 80, 0.98), rgba(17, 26, 53, 0.98)),
+      var(--liberty-blue);
+    border: 1px solid rgba(255,255,255,0.12);
     box-shadow: var(--shadow);
   }
 
-  .shape-photo img {
-    width: 100%;
-    height: 100%;
-    min-height: 540px;
-    object-fit: cover;
-    opacity: 0.9;
-    filter: saturate(1.08) contrast(1.04);
-  }
-
-  .shape-photo::after {
+  .testimonial-marquee::before,
+  .testimonial-marquee::after {
     content: '';
     position: absolute;
-    inset: 0;
-    background:
-      linear-gradient(180deg, rgba(31, 44, 80, 0.05), rgba(17, 26, 53, 0.62)),
-      linear-gradient(135deg, rgba(229,31,45,0.22), transparent 42%);
+    left: 0;
+    right: 0;
+    height: 90px;
+    z-index: 3;
+    pointer-events: none;
   }
 
-  .about-floating-badge {
-    position: absolute;
-    z-index: 4;
-    left: 24px;
-    bottom: 34px;
-    max-width: 250px;
-    border-radius: 26px;
-    padding: 1.1rem;
-    background: rgba(255,255,255,0.94);
-    border: 1px solid rgba(31,44,80,0.08);
-    box-shadow: 0 20px 48px rgba(31,44,80,0.18);
+  .testimonial-marquee::before {
+    top: 0;
+    background: linear-gradient(180deg, var(--liberty-blue-2), transparent);
   }
 
-  .about-floating-badge strong {
+  .testimonial-marquee::after {
+    bottom: 0;
+    background: linear-gradient(0deg, var(--liberty-blue-2), transparent);
+  }
+
+  .testimonial-track {
+    width: 100%;
+    animation: testimonialMove 58s linear infinite;
+  }
+
+  .testimonial-marquee:hover .testimonial-track {
+    animation-play-state: paused;
+  }
+
+  .testimonial-set {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .testimonial-card {
+    padding: 1.35rem;
+    border-radius: 22px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.14);
+    color: var(--white);
+  }
+
+  .testimonial-card::before {
+    content: '“';
     display: block;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 2.65rem;
+    height: 34px;
+    font-family: Georgia, serif;
+    font-size: 3.8rem;
     line-height: 0.9;
-    color: var(--liberty-red);
+    color: var(--liberty-yellow);
   }
 
-  .about-floating-badge span {
-    display: block;
-    margin-top: 0.35rem;
-    color: var(--liberty-blue);
-    font-size: 0.78rem;
+  .testimonial-quote {
+    font-size: 0.88rem;
+    line-height: 1.72;
+    color: rgba(255,255,255,0.84);
+  }
+
+  .testimonial-name {
+    margin-top: 1rem;
     font-weight: 900;
-    letter-spacing: 0.08em;
+    color: var(--white);
+  }
+
+  .testimonial-meta {
+    margin-top: 0.28rem;
+    font-size: 0.72rem;
+    line-height: 1.45;
+    font-weight: 800;
+    color: var(--powder-blue);
     text-transform: uppercase;
+  }
+
+  @keyframes testimonialMove {
+    to { transform: translateY(-50%); }
   }
 
   .about-content {
@@ -1006,9 +1000,9 @@
   }
   .registration-card {
     position: relative;
-    max-width: 900px;
+    max-width: 820px;
     margin: 0 auto;
-    padding: clamp(1rem, 4vw, 2.4rem);
+    padding: clamp(0.75rem, 3vw, 1.5rem);
     border-radius: 34px;
     background: var(--white);
     border: 1px solid rgba(31, 44, 80, 0.08);
@@ -1028,6 +1022,58 @@
   .registration-card .ml-embedded {
     position: relative;
     z-index: 2;
+  }
+  .registration-card .ml-form-embedContainer,
+  .registration-card .ml-form-embedWrapper,
+  .registration-card .ml-form-embedBody {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    background: transparent !important;
+  }
+  .registration-card .ml-form-embedWrapper {
+    border: 0 !important;
+    border-radius: 24px !important;
+    box-shadow: none !important;
+  }
+  .registration-card .ml-form-embedBody {
+    padding: clamp(1rem, 4vw, 2rem) !important;
+  }
+  .registration-card .ml-form-embedBody h4,
+  .registration-card .ml-form-embedBody p,
+  .registration-card .ml-form-embedBody label {
+    font-family: 'Montserrat', sans-serif !important;
+    color: var(--liberty-blue) !important;
+  }
+  .registration-card .ml-form-embedBody h4 {
+    font-family: 'Titillium Web', sans-serif !important;
+    font-size: clamp(1.8rem, 4vw, 2.65rem) !important;
+    line-height: 1 !important;
+  }
+  #registration-form #mlb2-42735190 .ml-form-fieldRow input,
+  #registration-form #mlb2-42735190 .ml-form-fieldRow select,
+  #registration-form #mlb2-42735190 .ml-form-fieldRow textarea {
+    min-height: 52px !important;
+    border: 1px solid rgba(31, 44, 80, 0.18) !important;
+    border-radius: 12px !important;
+    background: var(--soft) !important;
+    color: var(--ink) !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 0.94rem !important;
+  }
+  #registration-form #mlb2-42735190 .ml-form-embedSubmit button {
+    min-height: 54px !important;
+    border-radius: 12px !important;
+    background: var(--liberty-red) !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 0.9rem !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.04em !important;
+    text-transform: uppercase !important;
+    box-shadow: 0 16px 34px rgba(229, 31, 45, 0.25) !important;
+  }
+  #registration-form #mlb2-42735190 .ml-form-embedSubmit button:hover {
+    background: #c91825 !important;
   }
   @media (max-width: 1120px) {
     .speaker-grid { grid-template-columns: repeat(3, 1fr); }
@@ -1053,8 +1099,7 @@
     .hero h1 { font-size: clamp(3.05rem, 17vw, 4.4rem); }
     .quick-info { grid-template-columns: 1fr; }
     .hero-actions .btn { width: 100%; }
-    .floating-logo { width: 178px; }
-    .hero-poster { max-width: 100%; align-self: stretch; }
+    .hero-poster { width: 100%; }
     .stat-grid { grid-template-columns: 1fr; }
     .gallery-grid { grid-template-columns: 1fr; }
     .speaker-grid { grid-template-columns: 1fr; }
@@ -1069,7 +1114,30 @@
   @media (max-width: 720px) {
     .registration-benefits { grid-template-columns: repeat(2, 1fr); }
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    .testimonial-track,
+    .ribbon-track {
+      animation: none;
+    }
+    .testimonial-marquee {
+      max-height: 620px;
+      overflow-y: auto;
+    }
+    .testimonial-set[aria-hidden="true"] {
+      display: none;
+    }
+  }
 </style>
+<!-- MailerLite Universal -->
+<script>
+  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+  .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+  n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+  ml('account', '643388');
+</script>
+<!-- End MailerLite Universal -->
 </head>
 <body>
 
@@ -1108,7 +1176,6 @@
     </div>
     <div class="hero-card" aria-label="CAS Bootcamp visual highlight">
       <div class="hero-card-content">
-        <img class="floating-logo" src="data:image/png;base64,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" alt="Liberty Career Academy logo">
         <div class="hero-poster">
           <div class="poster-kicker">Discover. Engage. Evolve.</div>
           <div class="poster-title">Own your next move.</div>
@@ -1138,13 +1205,62 @@
 
 <section class="section about" id="about">
   <div class="container about-grid">
-    <div class="about-visual">
-      <div class="shape-photo">
-        <img src="https://drive.google.com/thumbnail?id=1paO_r0KvOgWnk5h2V0pTdrA2JEpspUkY&sz=w1200" alt="CAS Bootcamp participants">
-      </div>
-      <div class="about-floating-badge">
-        <strong>10TH</strong>
-        <span>A decade of equipping young people</span>
+    <div class="testimonial-marquee" aria-label="CAS Bootcamp participant testimonials">
+      <div class="testimonial-track">
+        <div class="testimonial-set">
+          <article class="testimonial-card">
+            <p class="testimonial-quote">I’ve attended CAS Bootcamp twice and I can say for sure that it was a life changing experience. I was guided and advised on the steps to take to achieve my goals in life. My level of creativity got an increase as a result of the activities during the program</p>
+            <p class="testimonial-name">Omotayo Subomi</p>
+            <p class="testimonial-meta">2018 &amp; 2019 CAS Bootcamp Participant</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-quote">I really enjoyed the fact that the experts came prepared to enlighten us. They were really friendly and the environment was calm and comfortable. I really learnt a lot in this experience as it helped me discover new and exciting things about myself. Thanks to this amazing get-together, I would really like to do this kind of thing again next year and I highly recommend parents to bring their kids to this boot camp as this could help in a major leap in their lives.</p>
+            <p class="testimonial-name">Adetolu A.</p>
+            <p class="testimonial-meta">2023 CAS Bootcamp Participant</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-quote">“I am so glad I made it to CAS 2024. It is a life-changing program, providing not only awareness of leadership, but also career choices and other features like financial intelligence to every individual. I am very proud to say I would choose CAS Bootcamp over and over again.”</p>
+            <p class="testimonial-name">Abdulqudus Ayomide</p>
+            <p class="testimonial-meta">2024 CAS Bootcamp Participant</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-quote">“At first I told myself that I wasn't going to go to this camp. What was the point? Reluctantly after being persuaded I came to CAS . Little did I know that it was the best decision of my life. I learnt so much and found the role model I had been looking for - the speaker on " you are enough" Mrs Gladys Ameh. This camp helped me to discover myself and understand my journey to success as well as knowing my purpose in life. CAS was great!!!”</p>
+            <p class="testimonial-name">Favor Aifuwa</p>
+            <p class="testimonial-meta">2025 CAS Bootcamp Participant</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-quote">“CAS 2025 is a leadership and career-transforming experience. I was inspired, challenged, and equipped with practical tools to lead, grow, and impact my world. This was more than a program; it was a shift. I’m coming out bolder, wiser, and ready to take action.”</p>
+            <p class="testimonial-name">Richard Chinedu</p>
+            <p class="testimonial-meta">2025 CAS Bootcamp Participant</p>
+          </article>
+        </div>
+        <div class="testimonial-set" aria-hidden="true">
+          <article class="testimonial-card">
+            <p class="testimonial-quote">I’ve attended CAS Bootcamp twice and I can say for sure that it was a life changing experience. I was guided and advised on the steps to take to achieve my goals in life. My level of creativity got an increase as a result of the activities during the program</p>
+            <p class="testimonial-name">Omotayo Subomi</p>
+            <p class="testimonial-meta">2018 &amp; 2019 CAS Bootcamp Participant</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-quote">I really enjoyed the fact that the experts came prepared to enlighten us. They were really friendly and the environment was calm and comfortable. I really learnt a lot in this experience as it helped me discover new and exciting things about myself. Thanks to this amazing get-together, I would really like to do this kind of thing again next year and I highly recommend parents to bring their kids to this boot camp as this could help in a major leap in their lives.</p>
+            <p class="testimonial-name">Adetolu A.</p>
+            <p class="testimonial-meta">2023 CAS Bootcamp Participant</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-quote">“I am so glad I made it to CAS 2024. It is a life-changing program, providing not only awareness of leadership, but also career choices and other features like financial intelligence to every individual. I am very proud to say I would choose CAS Bootcamp over and over again.”</p>
+            <p class="testimonial-name">Abdulqudus Ayomide</p>
+            <p class="testimonial-meta">2024 CAS Bootcamp Participant</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-quote">“At first I told myself that I wasn't going to go to this camp. What was the point? Reluctantly after being persuaded I came to CAS . Little did I know that it was the best decision of my life. I learnt so much and found the role model I had been looking for - the speaker on " you are enough" Mrs Gladys Ameh. This camp helped me to discover myself and understand my journey to success as well as knowing my purpose in life. CAS was great!!!”</p>
+            <p class="testimonial-name">Favor Aifuwa</p>
+            <p class="testimonial-meta">2025 CAS Bootcamp Participant</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-quote">“CAS 2025 is a leadership and career-transforming experience. I was inspired, challenged, and equipped with practical tools to lead, grow, and impact my world. This was more than a program; it was a shift. I’m coming out bolder, wiser, and ready to take action.”</p>
+            <p class="testimonial-name">Richard Chinedu</p>
+            <p class="testimonial-meta">2025 CAS Bootcamp Participant</p>
+          </article>
+        </div>
       </div>
     </div>
     <div class="about-content">
@@ -1438,13 +1554,6 @@ Come ready for career clarity, values-based mentoring, peer connection, and prac
   }
   setInterval(updateCountdown, 1000);
   updateCountdown();
-</script>
-<script>
-  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);};
-  l=d.createElement(e);l.async=1;l.src=u;
-  n=d.getElementsByTagName(e)[0];n.parentNode.insertBefore(l,n);})
-  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-  ml('account', '643388');
 </script>
 </body>
 </html>
