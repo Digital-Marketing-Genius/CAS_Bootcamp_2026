@@ -699,6 +699,39 @@
     filter: saturate(1.05) contrast(1.03);
   }
 
+  .speaker-card--zoom-gbenga .speaker-front img {
+    transform: scale(1.55);
+    transform-origin: 50% 22%;
+    object-position: 50% 24%;
+  }
+
+  .speaker-card--zoom-abayomi .speaker-front img {
+    transform: scale(1.5);
+    transform-origin: 50% 22%;
+    object-position: 50% 23%;
+  }
+
+  .speaker-card--zoom-abosede .speaker-front img {
+    transform: scale(1.68);
+    transform-origin: 50% 24%;
+    object-position: 50% 24%;
+  }
+
+  .speaker-placeholder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background:
+      radial-gradient(circle at 50% 26%, rgba(255,255,255,0.18), transparent 28%),
+      linear-gradient(135deg, #1F2C50 0%, #69B0E2 58%, #E51F2D 118%);
+    color: var(--white);
+    font-family: 'Titillium Web', sans-serif;
+    font-size: clamp(4.6rem, 8vw, 6.3rem);
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+
   .speaker-front::after {
     content: '';
     position: absolute;
@@ -823,6 +856,13 @@
   .speaker-card:nth-child(8) { --speaker-a: #1F2C50; --speaker-b: #69B0E2; --speaker-c: #E51F2D; --speaker-text: #FFFFFF; }
   .speaker-card:nth-child(9) { --speaker-a: #1F2C50; --speaker-b: #EFC815; --speaker-c: #69B0E2; --speaker-text: #FFFFFF; }
   .speaker-card:nth-child(10) { --speaker-a: #E51F2D; --speaker-b: #1F2C50; --speaker-c: #F9B13C; --speaker-text: #FFFFFF; }
+
+  .speaker-card--dark-back {
+    --speaker-a: #1F2C50;
+    --speaker-b: #69B0E2;
+    --speaker-c: #E51F2D;
+    --speaker-text: #FFFFFF;
+  }
 
   .speaker-front {
     background:
@@ -1338,60 +1378,12 @@ Come ready for career clarity, values-based mentoring, peer connection, and prac
       <article class="speaker-card" tabindex="0">
         <div class="speaker-card-inner">
           <div class="speaker-face speaker-front">
-            <img src="images/speakers/gbenga-rufai.webp" alt="Gbenga Rufai portrait">
-            <div class="speaker-meta"><h3>Gbenga Rufai</h3><p>Founder & President, Liberty Career Academy</p></div>
+            <img src="images/speakers/victory-ashaka.webp" alt="Victory Ashaka portrait">
+            <div class="speaker-meta"><h3>Victory Ashaka</h3><p>Vice Chairperson, Youth Sounding Board, Nigeria</p></div>
           </div>
           <div class="speaker-face speaker-back">
-            <div><span class="speaker-bio-label">Profile</span><h3>Gbenga Rufai</h3><p>Founder of Liberty Career Academy and convener of CAS Bootcamp, helping young people clarify purpose, career direction, and stewardship.</p></div>
-            <span class="speaker-topic">Purpose & Direction</span>
-          </div>
-        </div>
-      </article>
-      <article class="speaker-card" tabindex="0">
-        <div class="speaker-card-inner">
-          <div class="speaker-face speaker-front">
-            <img src="images/speakers/oluwatayo-winkunle.webp" alt="Oluwatayo Winkunle portrait">
-            <div class="speaker-meta"><h3>Oluwatayo Winkunle</h3><p>CEO, Techlytics Africa</p></div>
-          </div>
-          <div class="speaker-face speaker-back">
-            <div><span class="speaker-bio-label">Profile</span><h3>Oluwatayo Winkunle</h3><p>A technology and business leader helping young people see how digital skills, clarity, and problem solving can open future opportunities.</p></div>
-            <span class="speaker-topic">Digital Skills</span>
-          </div>
-        </div>
-      </article>
-      <article class="speaker-card" tabindex="0">
-        <div class="speaker-card-inner">
-          <div class="speaker-face speaker-front">
-            <img src="images/speakers/jumoke-malachi.webp" alt="Dr. Jumoke Aleoke-Malachi portrait">
-            <div class="speaker-meta"><h3>Dr. Jumoke Aleoke-Malachi</h3><p>Head, Talent Management, WEMA Bank</p></div>
-          </div>
-          <div class="speaker-face speaker-back">
-            <div><span class="speaker-bio-label">Profile</span><h3>Dr. Jumoke Aleoke-Malachi</h3><p>A talent management leader bringing workplace insight, career growth perspective, and practical guidance for young people preparing for the future.</p></div>
-            <span class="speaker-topic">Career Growth</span>
-          </div>
-        </div>
-      </article>
-      <article class="speaker-card" tabindex="0">
-        <div class="speaker-card-inner">
-          <div class="speaker-face speaker-front">
-            <img src="images/speakers/olumide-owolabi.webp" alt="Olumide Owolabi portrait">
-            <div class="speaker-meta"><h3>Olumide Owolabi</h3><p>Country Manager, Travelstart</p></div>
-          </div>
-          <div class="speaker-face speaker-back">
-            <div><span class="speaker-bio-label">Profile</span><h3>Olumide Owolabi</h3><p>Country Manager at Travelstart, bringing practical insight on leadership, growth, decision making, and building confidence in a fast-moving industry.</p></div>
-            <span class="speaker-topic">Leadership & Growth</span>
-          </div>
-        </div>
-      </article>
-      <article class="speaker-card" tabindex="0">
-        <div class="speaker-card-inner">
-          <div class="speaker-face speaker-front">
-            <img src="images/speakers/abayomi-adewumi.webp" alt="Abayomi Adewumi portrait">
-            <div class="speaker-meta"><h3>Abayomi Adewumi</h3><p>Managing Partner, GLI Consults</p></div>
-          </div>
-          <div class="speaker-face speaker-back">
-            <div><span class="speaker-bio-label">Profile</span><h3>Abayomi Adewumi</h3><p>A business development and strategy consultant helping ideas grow into stronger enterprises across Africa and global markets.</p></div>
-            <span class="speaker-topic">Strategy & Enterprise</span>
+            <div><span class="speaker-bio-label">Profile</span><h3>Victory Ashaka</h3><p>Vice Chairperson of the Youth Sounding Board in Nigeria and a youth voice helping young people lead, communicate, and contribute with confidence.</p></div>
+            <span class="speaker-topic">Youth Leadership</span>
           </div>
         </div>
       </article>
@@ -1402,7 +1394,7 @@ Come ready for career clarity, values-based mentoring, peer connection, and prac
             <div class="speaker-meta"><h3>Bukola Aladesulu</h3><p>Executive Director, Upthrive</p></div>
           </div>
           <div class="speaker-face speaker-back">
-            <div><span class="speaker-bio-label">Profile</span><h3>Bukola Aladesulu</h3><p>A digital inclusion and youth development advocate creating access to education, mentorship, funding, and opportunities for African youth.</p></div>
+            <div><span class="speaker-bio-label">Profile</span><h3>Bukola Aladesulu</h3><p>Executive Director of Upthrive, creating access to education, mentorship, funding, and opportunities for African youth.</p></div>
             <span class="speaker-topic">Youth Development</span>
           </div>
         </div>
@@ -1410,23 +1402,35 @@ Come ready for career clarity, values-based mentoring, peer connection, and prac
       <article class="speaker-card" tabindex="0">
         <div class="speaker-card-inner">
           <div class="speaker-face speaker-front">
-            <img src="images/speakers/victory-ashaka.webp" alt="Victory Ashaka portrait">
-            <div class="speaker-meta"><h3>Victory Ashaka</h3><p>Spoken Word Poet & Youth Ambassador</p></div>
+            <img src="images/speakers/solomon-ayodele.webp" alt="Solomon Ayodele portrait">
+            <div class="speaker-meta"><h3>Solomon Ayodele</h3><p>Head, Technology Innovation - ALAT by WEMA, WEMA Bank</p></div>
           </div>
           <div class="speaker-face speaker-back">
-            <div><span class="speaker-bio-label">Profile</span><h3>Victory Ashaka</h3><p>A multi-award-winning spoken word poet, youth advisor, and global youth ambassador whose work has appeared on major international platforms.</p></div>
-            <span class="speaker-topic">Voice & Leadership</span>
+            <div><span class="speaker-bio-label">Profile</span><h3>Solomon Ayodele</h3><p>Head of Technology Innovation for ALAT by WEMA at WEMA Bank, building customer-centered technology products and driving digital transformation.</p></div>
+            <span class="speaker-topic">Innovation</span>
           </div>
         </div>
       </article>
-      <article class="speaker-card" tabindex="0">
+      <article class="speaker-card speaker-card--zoom-gbenga" tabindex="0">
+        <div class="speaker-card-inner">
+          <div class="speaker-face speaker-front">
+            <img src="images/speakers/gbenga-rufai.webp" alt="Gbenga Rufai portrait">
+            <div class="speaker-meta"><h3>Gbenga Rufai</h3><p>President, Liberty Career Academy</p></div>
+          </div>
+          <div class="speaker-face speaker-back">
+            <div><span class="speaker-bio-label">Profile</span><h3>Gbenga Rufai</h3><p>President of Liberty Career Academy and convener of CAS Bootcamp, helping young people clarify purpose, career direction, and stewardship.</p></div>
+            <span class="speaker-topic">Purpose & Direction</span>
+          </div>
+        </div>
+      </article>
+      <article class="speaker-card speaker-card--zoom-abosede speaker-card--dark-back" tabindex="0">
         <div class="speaker-card-inner">
           <div class="speaker-face speaker-front">
             <img src="images/speakers/abosede.webp" alt="Abosede Adeniran-Aderemi portrait">
-            <div class="speaker-meta"><h3>Abosede Adeniran-Aderemi</h3><p>News Anchor, TVC Communications</p></div>
+            <div class="speaker-meta"><h3>Abosede Adeniran-Aderemi</h3><p>News Anchor, TVCnews</p></div>
           </div>
           <div class="speaker-face speaker-back">
-            <div><span class="speaker-bio-label">Profile</span><h3>Abosede Adeniran-Aderemi</h3><p>News anchor at TVC Communications, bringing media experience and perspective on communication, confidence, and purposeful personal growth.</p></div>
+            <div><span class="speaker-bio-label">Profile</span><h3>Abosede Adeniran-Aderemi</h3><p>News Anchor at TVCnews, bringing media experience and perspective on communication, confidence, and purposeful personal growth.</p></div>
             <span class="speaker-topic">Communication</span>
           </div>
         </div>
@@ -1434,12 +1438,60 @@ Come ready for career clarity, values-based mentoring, peer connection, and prac
       <article class="speaker-card" tabindex="0">
         <div class="speaker-card-inner">
           <div class="speaker-face speaker-front">
-            <img src="images/speakers/solomon-ayodele.webp" alt="Solomon O. Ayodele portrait">
-            <div class="speaker-meta"><h3>Solomon O. Ayodele</h3><p>Head, Technology Innovation, ALAT by WEMA</p></div>
+            <img src="images/speakers/olumide-owolabi.webp" alt="Olumide Owolabi portrait">
+            <div class="speaker-meta"><h3>Olumide Owolabi</h3><p>Country Manager, Travelstart Nigeria</p></div>
           </div>
           <div class="speaker-face speaker-back">
-            <div><span class="speaker-bio-label">Profile</span><h3>Solomon O. Ayodele</h3><p>Head of Innovation at WEMA Bank and ALAT by WEMA, building customer-centered technology products and driving digital transformation.</p></div>
-            <span class="speaker-topic">Innovation</span>
+            <div><span class="speaker-bio-label">Profile</span><h3>Olumide Owolabi</h3><p>Country Manager at Travelstart Nigeria, bringing practical insight on leadership, growth, decision making, and building confidence in a fast-moving industry.</p></div>
+            <span class="speaker-topic">Leadership & Growth</span>
+          </div>
+        </div>
+      </article>
+      <article class="speaker-card" tabindex="0">
+        <div class="speaker-card-inner">
+          <div class="speaker-face speaker-front">
+            <img src="images/speakers/jumoke-malachi.webp" alt="Jumoke Aleoke-Malachi portrait">
+            <div class="speaker-meta"><h3>Jumoke Aleoke-Malachi</h3><p>Senior HR Business Partner, WEMA Bank</p></div>
+          </div>
+          <div class="speaker-face speaker-back">
+            <div><span class="speaker-bio-label">Profile</span><h3>Jumoke Aleoke-Malachi</h3><p>Senior HR Business Partner at WEMA Bank, bringing workplace insight, career growth perspective, and practical guidance for the future.</p></div>
+            <span class="speaker-topic">Career Growth</span>
+          </div>
+        </div>
+      </article>
+      <article class="speaker-card" tabindex="0">
+        <div class="speaker-card-inner">
+          <div class="speaker-face speaker-front">
+            <div class="speaker-placeholder" role="img" aria-label="Akin Akingbola portrait placeholder">AA</div>
+            <div class="speaker-meta"><h3>Akin Akingbola</h3><p>Lead Partner and Creative Director, Difusio Media</p></div>
+          </div>
+          <div class="speaker-face speaker-back">
+            <div><span class="speaker-bio-label">Profile</span><h3>Akin Akingbola</h3><p>Lead Partner and Creative Director at Difusio Media, bringing creative strategy, storytelling, and brand-building perspective to the bootcamp.</p></div>
+            <span class="speaker-topic">Creative Direction</span>
+          </div>
+        </div>
+      </article>
+      <article class="speaker-card" tabindex="0">
+        <div class="speaker-card-inner">
+          <div class="speaker-face speaker-front">
+            <img src="images/speakers/oluwatayo-winkunle.webp" alt="Tayo Winkunle portrait">
+            <div class="speaker-meta"><h3>Tayo Winkunle</h3><p>Chief Executive Officer, Techlytics Africa</p></div>
+          </div>
+          <div class="speaker-face speaker-back">
+            <div><span class="speaker-bio-label">Profile</span><h3>Tayo Winkunle</h3><p>Chief Executive Officer of Techlytics Africa, helping young people see how digital skills, clarity, and problem solving can open future opportunities.</p></div>
+            <span class="speaker-topic">Digital Skills</span>
+          </div>
+        </div>
+      </article>
+      <article class="speaker-card speaker-card--zoom-abayomi" tabindex="0">
+        <div class="speaker-card-inner">
+          <div class="speaker-face speaker-front">
+            <img src="images/speakers/abayomi-adewumi.webp" alt="Abayomi Adewumi portrait">
+            <div class="speaker-meta"><h3>Abayomi Adewumi</h3><p>Managing Partner, GLI Consults</p></div>
+          </div>
+          <div class="speaker-face speaker-back">
+            <div><span class="speaker-bio-label">Profile</span><h3>Abayomi Adewumi</h3><p>Managing Partner at GLI Consults, helping ideas grow into stronger enterprises across Africa and global markets.</p></div>
+            <span class="speaker-topic">Strategy & Enterprise</span>
           </div>
         </div>
       </article>
